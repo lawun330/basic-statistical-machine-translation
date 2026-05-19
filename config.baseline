@@ -1,8 +1,7 @@
-
 ### directories that contain tools and data
 # 
 # moses
-moses-src-dir = /home/lawun330/NLP/ubuntu-17.04/moses
+moses-src-dir = /home/lawun330/NLP/ubuntu-17.04/moses # -- EDIT HERE --
 
 # moses binaries
 moses-bin-dir = $moses-src-dir/bin
@@ -11,10 +10,10 @@ moses-bin-dir = $moses-src-dir/bin
 moses-script-dir = $moses-src-dir/scripts
 
 # directory where GIZA++/MGIZA programs resides
-external-bin-dir = /home/lawun330/NLP/giza-pp/GIZA++-v2
+external-bin-dir = /home/lawun330/NLP/giza-pp/GIZA++-v2 # -- EDIT HERE --
 
 # srilm
-srilm-dir = /home/lawun330/NLP/SRILM/bin/i686-m64
+srilm-dir = /home/lawun330/NLP/SRILM/bin/i686-m64 # -- EDIT HERE --
 
 # irstlm
 #irstlm-dir = $moses-src-dir/irstlm/bin
@@ -26,7 +25,7 @@ srilm-dir = /home/lawun330/NLP/SRILM/bin/i686-m64
 lmplz = $moses-bin-dir/lmplz
 
 # data
-myg2p-data = /home/lawun330/Desktop/basic-statistical-machine-translation/data/
+myg2p-data = /home/lawun330/Desktop/basic-statistical-machine-translation/data/cleaned # -- EDIT HERE --
 
 ### basic tools
 #
@@ -584,7 +583,7 @@ wrapping-script = "$moses-script-dir/ems/support/wrap-xml.perl $output-extension
 #
 nist-bleu = $moses-script-dir/generic/mteval-v13a.pl
 nist-bleu-c = "$moses-script-dir/generic/mteval-v13a.pl -c"
-#multi-bleu = $moses-script-dir/generic/multi-bleu.perl
+multi-bleu = $moses-script-dir/generic/multi-bleu.perl
 #ibm-bleu =
 
 ### TER: translation error rate (BBN metric) based on edit distance
@@ -658,4 +657,3 @@ wrapping-frame = $input-sgm
 [REPORTING]
 
 ### currently no parameters for reporting section
-

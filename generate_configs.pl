@@ -17,10 +17,10 @@ use strict;
 my @langs;
 
 # you have to update the PBSMT experiment path!!!
-my $smtpath = "/home/lawun330/Desktop/basic-statistical-machine-translation";
+my $smtpath = "/home/lawun330/Desktop/basic-statistical-machine-translation"; # -- EDIT HERE --
 
 # you have to update the data path for running PBSMT experiment!!!
-foreach my $trainFile ( </home/lawun330/Desktop/basic-statistical-machine-translation/data/train.[a-z][a-z]>)
+foreach my $trainFile ( </home/lawun330/Desktop/basic-statistical-machine-translation/data/cleaned/train.[a-z][a-z]> ) # -- EDIT HERE --
 {                        
         $trainFile =~ m/train.([a-z][a-z])/;
         
@@ -29,7 +29,6 @@ foreach my $trainFile ( </home/lawun330/Desktop/basic-statistical-machine-transl
 
 foreach my $expt (qw/baseline/)
 {
-
 die("$smtpath/$expt") if (-d "$smtpath/$expt");
 `mkdir $smtpath/$expt`;
     foreach my $src (@langs)
