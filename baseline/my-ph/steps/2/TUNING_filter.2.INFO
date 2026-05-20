@@ -1,0 +1,1 @@
+INPUT = USED /home/lawun330/Desktop/basic-statistical-machine-translation/data/cleaned/dev.my /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph/model/phrase-table.2 /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph/model/reordering-table.2  

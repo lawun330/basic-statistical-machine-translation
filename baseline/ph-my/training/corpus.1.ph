@@ -1,0 +1,1 @@
+/home/lawun330/Desktop/basic-statistical-machine-translation/baseline/ph-my/corpus/myg2p-data.clean.1.ph

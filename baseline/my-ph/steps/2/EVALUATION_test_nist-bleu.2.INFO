@@ -1,0 +1,3 @@
+INPUT = USED /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph/evaluation/test.detokenized.sgm.2 /home/lawun330/Desktop/basic-statistical-machine-translation/data/cleaned/test-sgm/test.ph.ref.sgm
+nist-bleu = /home/lawun330/NLP/ubuntu-17.04/moses/scripts/generic/mteval-v13a.pl [1506443775]
+EVALUATION:test:reference-sgm = /home/lawun330/Desktop/basic-statistical-machine-translation/data/cleaned/test-sgm/test.ph.ref.sgm [1779309494]

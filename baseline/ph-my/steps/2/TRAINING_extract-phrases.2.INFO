@@ -1,0 +1,5 @@
+script = /home/lawun330/NLP/ubuntu-17.04/moses/scripts/training/train-model.perl [1506443775]
+lexicalized-reordering = msd-bidirectional-fe
+max-phrase-length = 5
+INPUT = USED /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/ph-my/model/aligned.2 /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/ph-my/training/corpus.1
+# reuse run 1 for TRAINING:consolidate

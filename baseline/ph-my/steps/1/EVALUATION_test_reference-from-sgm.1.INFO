@@ -1,0 +1,3 @@
+EVALUATION:test:input-sgm = /home/lawun330/Desktop/basic-statistical-machine-translation/data/cleaned/test-sgm/test.ph.src.sgm [1779309494]
+EVALUATION:test:reference-sgm = /home/lawun330/Desktop/basic-statistical-machine-translation/data/cleaned/test-sgm/test.my.ref.sgm [1779309494]
+INPUT = USED /home/lawun330/Desktop/basic-statistical-machine-translation/data/cleaned/test-sgm/test.my.ref.sgm /home/lawun330/Desktop/basic-statistical-machine-translation/data/cleaned/test-sgm/test.ph.src.sgm

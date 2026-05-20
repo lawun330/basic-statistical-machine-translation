@@ -1,0 +1,9 @@
+filteredPath=/home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph/evaluation/test.filtered.2/moses.ini 
+origPath=/home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph/model/moses.ini.2 
+tunedPath=/home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph/tuning/moses.tuned.ini.2 
+outPath=/home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph/evaluation/test.filtered.ini.2 
+tempPath=/tmp/moses.ini.63512 
+cmd=/home/lawun330/NLP/ubuntu-17.04/moses/scripts/ems/support/substitute-filtered-tables.perl /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph/evaluation/test.filtered.2/moses.ini < /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph/model/moses.ini.2 > /tmp/moses.ini.63512  
+pt:PhraseDictionaryMemory name=TranslationModel0 num-features=4 path=/home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph/evaluation/test.filtered.2/phrase-table.0-0.1.1.gz input-factor=0 output-factor=0  
+ro:LexicalReordering name=LexicalReordering0 num-features=6 type=wbe-msd-bidirectional-fe-allff input-factor=0 output-factor=0 path=/home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph/evaluation/test.filtered.2/reordering-table.2.wbe-msd-bidirectional-fe.0-0.1  
+cmd=/home/lawun330/NLP/ubuntu-17.04/moses/scripts/ems/support/substitute-weights.perl /tmp/moses.ini.63512 /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph/tuning/moses.tuned.ini.2 /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph/evaluation/test.filtered.ini.2  

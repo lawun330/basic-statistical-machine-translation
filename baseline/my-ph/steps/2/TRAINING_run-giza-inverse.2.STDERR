@@ -1,0 +1,54 @@
+Using SCRIPTS_ROOTDIR: /home/lawun330/NLP/ubuntu-17.04/moses/scripts
+Using single-thread GIZA
+using pigz 
+(2) running giza @ Thu May 21 04:05:19 +07 2026
+(2.1a) running snt2cooc my-ph @ Thu May 21 04:05:19 +07 2026
+
+Executing: mkdir -p /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph/training/giza-inverse.2
+Executing: /home/lawun330/NLP/giza-pp/GIZA++-v2/snt2cooc.out /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph/training/prepared.2/ph.vcb /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph/training/prepared.2/my.vcb /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph/training/prepared.2/my-ph-int-train.snt > /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph/training/giza-inverse.2/my-ph.cooc
+line 1000
+line 2000
+line 3000
+line 4000
+line 5000
+line 6000
+line 7000
+line 8000
+line 9000
+line 10000
+line 11000
+line 12000
+line 13000
+line 14000
+line 15000
+line 16000
+line 17000
+line 18000
+line 19000
+line 20000
+END.
+(2.1b) running giza my-ph @ Thu May 21 04:05:19 +07 2026
+/home/lawun330/NLP/giza-pp/GIZA++-v2/GIZA++  -CoocurrenceFile /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph/training/giza-inverse.2/my-ph.cooc -c /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph/training/prepared.2/my-ph-int-train.snt -m1 5 -m2 0 -m3 3 -m4 3 -model1dumpfrequency 1 -model4smoothfactor 0.4 -nodumps 1 -nsmooth 4 -o /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph/training/giza-inverse.2/my-ph -onlyaldumps 1 -p0 0.999 -s /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph/training/prepared.2/ph.vcb -t /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph/training/prepared.2/my.vcb
+Executing: /home/lawun330/NLP/giza-pp/GIZA++-v2/GIZA++  -CoocurrenceFile /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph/training/giza-inverse.2/my-ph.cooc -c /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph/training/prepared.2/my-ph-int-train.snt -m1 5 -m2 0 -m3 3 -m4 3 -model1dumpfrequency 1 -model4smoothfactor 0.4 -nodumps 1 -nsmooth 4 -o /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph/training/giza-inverse.2/my-ph -onlyaldumps 1 -p0 0.999 -s /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph/training/prepared.2/ph.vcb -t /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph/training/prepared.2/my.vcb
+Reading vocabulary file from:/home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph/training/prepared.2/ph.vcb
+Reading vocabulary file from:/home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph/training/prepared.2/my.vcb
+10000
+20000
+NTable contains 18350 parameter.
+10000
+20000
+NTable contains 18350 parameter.
+10000
+20000
+NTable contains 18350 parameter.
+10000
+20000
+NTable contains 18350 parameter.
+10000
+20000
+NTable contains 18350 parameter.
+10000
+20000
+NTable contains 18350 parameter.
+Executing: rm -f /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph/training/giza-inverse.2/my-ph.A3.final.gz
+Executing: pigz /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph/training/giza-inverse.2/my-ph.A3.final

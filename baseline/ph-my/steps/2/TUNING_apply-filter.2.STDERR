@@ -1,0 +1,2 @@
+pt:PhraseDictionaryMemory name=TranslationModel0 num-features=4 path=/home/lawun330/Desktop/basic-statistical-machine-translation/baseline/ph-my/tuning/filtered.2/phrase-table.0-0.1.1.gz input-factor=0 output-factor=0  
+ro:LexicalReordering name=LexicalReordering0 num-features=6 type=wbe-msd-bidirectional-fe-allff input-factor=0 output-factor=0 path=/home/lawun330/Desktop/basic-statistical-machine-translation/baseline/ph-my/tuning/filtered.2/reordering-table.2.wbe-msd-bidirectional-fe.0-0.1  

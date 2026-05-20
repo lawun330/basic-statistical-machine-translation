@@ -1,0 +1,1 @@
+INPUT = USED /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph/evaluation/test.filtered.2 /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph/model/moses.ini.2 /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph/tuning/moses.tuned.ini.2
