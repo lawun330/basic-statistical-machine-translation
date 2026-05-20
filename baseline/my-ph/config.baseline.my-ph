@@ -95,7 +95,7 @@ generic-parallelizer = $moses-script-dir/ems/support/generic-parallelizer.perl
 #
 max-sentence-length = 80
 
-[CORPUS:myrk]
+[CORPUS:myg2p-data] # -- EDIT HERE --
 
 ### command to run to get raw corpus files
 #
@@ -103,11 +103,11 @@ max-sentence-length = 80
 
 ### raw corpus files (untokenized, but sentence aligned)
 # 
-raw-stem = $myrk-data/train
+raw-stem = $myg2p-data/train # -- EDIT HERE --
 
 ### tokenized corpus files (may contain long sentences)
 #
-#tokenized-stem = $myrk-data/train
+#tokenized-stem = $myg2p-data/train # -- EDIT HERE --
 
 ### if sentence filtering should be skipped,
 # point to the clean training data
@@ -144,8 +144,7 @@ raw-stem = $myrk-data/train
 
 # kenlm training
 lm-training = "$moses-script-dir/ems/support/lmplz-wrapper.perl -bin $moses-bin-dir/lmplz"
-settings = "--prune '0 0 1' -T $working-dir/lm -S 20% --discount_fallback" 
-
+settings = "--prune '0 0 1' -T $working-dir/lm -S 20% --discount_fallback"
 
 #lm-binarizer = $moses-bin-dir/build_binary
 
@@ -179,7 +178,7 @@ type = 8
 
 ### each language model to be used has its own section here
 
-[LM:myrk]
+[LM:myg2p-data]
 
 ### command to run to get raw corpus files
 #
@@ -187,7 +186,7 @@ type = 8
 
 ### raw corpus (untokenized)
 #
-raw-corpus = $myrk-data/train.$output-extension
+raw-corpus = $myg2p-data/train.$output-extension
 
 ### tokenized corpus files (may contain long sentences)
 #
@@ -477,14 +476,14 @@ tuning-settings = "-mertdir $moses-bin-dir"
 # it should contain 1000s of sentences
 #
 #input-sgm = 
-raw-input = $myrk-data/dev.$input-extension
+raw-input = $myg2p-data/dev.$input-extension
 
 #tokenized-input = 
 #factorized-input = 
 #input =
 # 
 #reference-sgm = 
-raw-reference = $myrk-data/dev.$output-extension
+raw-reference = $myg2p-data/dev.$output-extension
 
 #tokenized-reference = 
 #factorized-reference = 
@@ -629,7 +628,7 @@ report-precision-by-coverage = yes
 ### input data
 #
 #input-sgm = /panfs/panmt/users/ye/cluster/test-sgm/test.$input-extension.src.sgm
-input-sgm = $myrk-data/test-sgm/test.$input-extension.src.sgm
+input-sgm = $myg2p-data/test-sgm/test.$input-extension.src.sgm
 #input-sgm = $mykc-data/test-sgm/test.$input-extension.src.sgm
 
 # raw-input = $mykc-data/test.$input-extension
@@ -640,7 +639,7 @@ input-sgm = $myrk-data/test-sgm/test.$input-extension.src.sgm
 ### reference data
 #
 #reference-sgm = /panfs/panmt/users/ye/cluster/test-sgm/test.$output-extension.ref.sgm
-reference-sgm = $myrk-data/test-sgm/test.$output-extension.ref.sgm
+reference-sgm = $myg2p-data/test-sgm/test.$output-extension.ref.sgm
 #reference-sgm = $mykc-data/test-sgm/test.$output-extension.ref.sgm
 
 # raw-reference = $mykc-data/test.$output-extension
