@@ -6,9 +6,7 @@ use strict;
 
 my @langs;
 
-#foreach my $trainFile ( </home/ros/experiment/my-rk/data/train.[a-z][a-z]> )
-foreach my $trainFile ( <../train.[a-z][a-z]> )
-
+foreach my $trainFile ( <../train.[a-z][a-z]> ) # -- EDIT HERE --
 {                        
         $trainFile =~ m/train.([a-z][a-z])/;
         push @langs, $1;

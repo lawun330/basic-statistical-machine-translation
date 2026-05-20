@@ -53,9 +53,9 @@ die("$smtpath/$expt") if (-d "$smtpath/$expt");
     		print FILE "pair-extension = ${pair}\n";
     		print FILE "\n";
     		close FILE;
-     	
-     	    `cat $configFile config.$expt > tmp`;
-    	    `mv tmp $configFile`;
+
+    		`cat $configFile $smtpath/config.$expt > $smtpath/tmp`;
+    		`mv $smtpath/tmp $configFile`;
    	    }
     }
 }

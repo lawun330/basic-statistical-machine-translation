@@ -6,11 +6,10 @@ use strict;
 
 my $src = shift;
 
-print "<srcset setid=\"Myanmar-Rakhine_data\" srclang=\"any\">\n";
+print "<srcset setid=\"Burmese_G2P_data\" srclang=\"any\">\n"; # -- EDIT HERE --
 print "<doc docid=\"none\" genre=\"100\" origlang=\"$src\">\n";
 
-#open FILE, "/home/ros/experiment/my-rk/data/test.$src" or die;
-open FILE, "../test.$src" or die;
+open FILE, "../test.$src" or die; # -- EDIT HERE --
 
 my $id=1;
 
