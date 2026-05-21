@@ -1,0 +1,11 @@
+#!/bin/bash
+
+PATH="/home/lawun330/anaconda3/envs/lu_burmese_domain_specific_lm_env/bin:/home/lawun330/.config/herd-lite/bin:/home/lawun330/.cargo/bin:/home/lawun330/.local/bin:/home/lawun330/.nvm/versions/node/v22.22.2/bin:/home/lawun330/anaconda3/condabin:/home/lawun330/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/lawun330/NLP/SRILM/bin/i686-m64"
+cd /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph
+echo 'starting at '`date`' on '`hostname`
+mkdir -p /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph/evaluation
+
+/home/lawun330/NLP/ubuntu-17.04/moses/scripts/ems/support/report-experiment-scores.perl set=test,type=analysis-precision,file=/home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph/evaluation/test.analysis.2 set=test,type=analysis-coverage,file=/home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph/evaluation/test.analysis.2 set=test,type=multi-bleu,file=/home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph/evaluation/test.multi-bleu.2 set=test,type=nist-bleu-c,file=/home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph/evaluation/test.nist-bleu-c.3 set=test,type=nist-bleu,file=/home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph/evaluation/test.nist-bleu.3 >/home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph/evaluation/report.3
+
+echo 'finished at '`date`
+touch /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph/steps/3/REPORTING_report.3.DONE

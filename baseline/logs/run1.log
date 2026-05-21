@@ -421,3 +421,111 @@ number of steps doable or running: 1 at Thu May 21 04:16:08 AM +07 2026
 Can't exec "convert": No such file or directory at /home/lawun330/NLP/ubuntu-17.04/moses/scripts/ems/experiment.perl line 1102.
 number of steps doable or running: 0 at Thu May 21 04:16:15 AM +07 2026
 Can't exec "convert": No such file or directory at /home/lawun330/NLP/ubuntu-17.04/moses/scripts/ems/experiment.perl line 1102.
+Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/^\[([^:]+):{ <-- HERE (\S+)}:(\S+)\]$/ at /home/lawun330/NLP/ubuntu-17.04/moses/scripts/ems/experiment.perl line 626.
+STARTING UP AS PROCESS 121672 ON ROG-Strix-Hero-II AT Thu May 21 11:52:02 AM +07 2026
+LOAD CONFIG...
+working directory is /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph
+running experimental run number 3
+
+ESTABLISH WHICH STEPS NEED TO BE RUN
+
+FIND DEPENDENCIES BETWEEN STEPS
+
+CHECKING IF OLD STEPS ARE RE-USABLE
+
+STEP SUMMARY:
+82 EVALUATION:test:input-from-sgm ->	re-using (1)
+76 CORPUS:myg2p-data:clean ->	re-using (1)
+59 LM:myg2p-data:train ->	re-using (1)
+56 LM:myg2p-data:binarize ->	re-using (1)
+55 TRAINING:consolidate ->	re-using (1)
+54 TRAINING:prepare-data ->	re-using (2)
+53 TRAINING:run-giza ->	re-using (2)
+52 TRAINING:run-giza-inverse ->	re-using (2)
+51 TRAINING:symmetrize-giza ->	re-using (2)
+50 TRAINING:build-lex-trans ->	re-using (2)
+47 TRAINING:extract-phrases ->	re-using (2)
+46 TRAINING:build-reordering ->	re-using (2)
+45 TRAINING:build-ttable ->	re-using (2)
+42 TRAINING:create-config ->	re-using (2)
+27 TUNING:filter ->	re-using (2)
+26 TUNING:apply-filter ->	re-using (2)
+25 TUNING:tune ->	re-using (2)
+24 TUNING:apply-weights ->	re-using (2)
+18 EVALUATION:test:filter ->	re-using (2)
+17 EVALUATION:test:apply-filter ->	re-using (2)
+16 EVALUATION:test:decode ->	re-using (2)
+15 EVALUATION:test:remove-markup ->	re-using (2)
+11 EVALUATION:test:wrap ->	re-using (2)
+10 EVALUATION:test:reference-from-sgm ->	re-using (1)
+5 EVALUATION:test:nist-bleu ->	run
+4 EVALUATION:test:nist-bleu-c ->	run
+3 EVALUATION:test:multi-bleu ->	re-using (2)
+2 EVALUATION:test:analysis-coverage ->	re-using (2)
+1 EVALUATION:test:analysis-precision ->	re-using (2)
+0 REPORTING:report ->	run
+
+EXECUTE STEPS
+number of steps doable or running: 2 at Thu May 21 11:52:03 AM +07 2026
+	doable: EVALUATION:test:nist-bleu
+	doable: EVALUATION:test:nist-bleu-c
+	executing /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph/steps/3/EVALUATION_test_nist-bleu.3 via sh (1 active)
+	executing /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph/steps/3/EVALUATION_test_nist-bleu-c.3 via sh (2 active)
+number of steps doable or running: 1 at Thu May 21 11:52:15 AM +07 2026
+	doable: REPORTING:report
+	executing /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph/steps/3/REPORTING_report.3 via sh (1 active)
+number of steps doable or running: 0 at Thu May 21 11:52:22 AM +07 2026
+Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/^\[([^:]+):{ <-- HERE (\S+)}:(\S+)\]$/ at /home/lawun330/NLP/ubuntu-17.04/moses/scripts/ems/experiment.perl line 626.
+STARTING UP AS PROCESS 121834 ON ROG-Strix-Hero-II AT Thu May 21 11:52:23 AM +07 2026
+LOAD CONFIG...
+working directory is /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/ph-my
+running experimental run number 3
+
+ESTABLISH WHICH STEPS NEED TO BE RUN
+
+FIND DEPENDENCIES BETWEEN STEPS
+
+CHECKING IF OLD STEPS ARE RE-USABLE
+
+STEP SUMMARY:
+82 EVALUATION:test:input-from-sgm ->	re-using (1)
+76 CORPUS:myg2p-data:clean ->	re-using (1)
+59 LM:myg2p-data:train ->	re-using (1)
+56 LM:myg2p-data:binarize ->	re-using (1)
+55 TRAINING:consolidate ->	re-using (1)
+54 TRAINING:prepare-data ->	re-using (2)
+53 TRAINING:run-giza ->	re-using (2)
+52 TRAINING:run-giza-inverse ->	re-using (2)
+51 TRAINING:symmetrize-giza ->	re-using (2)
+50 TRAINING:build-lex-trans ->	re-using (2)
+47 TRAINING:extract-phrases ->	re-using (2)
+46 TRAINING:build-reordering ->	re-using (2)
+45 TRAINING:build-ttable ->	re-using (2)
+42 TRAINING:create-config ->	re-using (2)
+27 TUNING:filter ->	re-using (2)
+26 TUNING:apply-filter ->	re-using (2)
+25 TUNING:tune ->	re-using (2)
+24 TUNING:apply-weights ->	re-using (2)
+18 EVALUATION:test:filter ->	re-using (2)
+17 EVALUATION:test:apply-filter ->	re-using (2)
+16 EVALUATION:test:decode ->	re-using (2)
+15 EVALUATION:test:remove-markup ->	re-using (2)
+11 EVALUATION:test:wrap ->	re-using (2)
+10 EVALUATION:test:reference-from-sgm ->	re-using (1)
+5 EVALUATION:test:nist-bleu ->	run
+4 EVALUATION:test:nist-bleu-c ->	run
+3 EVALUATION:test:multi-bleu ->	re-using (2)
+2 EVALUATION:test:analysis-coverage ->	re-using (2)
+1 EVALUATION:test:analysis-precision ->	re-using (2)
+0 REPORTING:report ->	run
+
+EXECUTE STEPS
+number of steps doable or running: 2 at Thu May 21 11:52:23 AM +07 2026
+	doable: EVALUATION:test:nist-bleu-c
+	doable: EVALUATION:test:nist-bleu
+	executing /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/ph-my/steps/3/EVALUATION_test_nist-bleu-c.3 via sh (1 active)
+	executing /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/ph-my/steps/3/EVALUATION_test_nist-bleu.3 via sh (2 active)
+number of steps doable or running: 1 at Thu May 21 11:52:36 AM +07 2026
+	doable: REPORTING:report
+	executing /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/ph-my/steps/3/REPORTING_report.3 via sh (1 active)
+number of steps doable or running: 0 at Thu May 21 11:52:43 AM +07 2026

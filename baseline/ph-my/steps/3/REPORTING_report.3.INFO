@@ -1,0 +1,5 @@
+EVALUATION:test:analysis = /home/lawun330/NLP/ubuntu-17.04/moses/scripts/ems/support/analysis.perl [1506443774]
+INPUT = USED /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/ph-my/evaluation/test.nist-bleu.3 /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/ph-my/evaluation/test.nist-bleu-c.3   /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/ph-my/evaluation/test.multi-bleu.2         /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/ph-my/evaluation/test.analysis.2 /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/ph-my/evaluation/test.analysis.2   
+# reuse run 2 for EVALUATION:test:analysis-precision
+# reuse run 2 for EVALUATION:test:analysis-coverage
+# reuse run 2 for EVALUATION:test:multi-bleu

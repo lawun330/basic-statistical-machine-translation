@@ -1,0 +1,4 @@
+nist-bleu = /home/lawun330/NLP/ubuntu-17.04/moses/scripts/generic/mteval-v13a.pl [1779337639]
+EVALUATION:test:reference-sgm = /home/lawun330/Desktop/basic-statistical-machine-translation/data/cleaned/test-sgm/test.my.ref.sgm [1779309494]
+INPUT = USED /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/ph-my/evaluation/test.detokenized.sgm.2 /home/lawun330/Desktop/basic-statistical-machine-translation/data/cleaned/test-sgm/test.my.ref.sgm
+# reuse run 2 for EVALUATION:test:wrap

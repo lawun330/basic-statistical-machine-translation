@@ -1,0 +1,4 @@
+EVALUATION:test:reference-sgm = /home/lawun330/Desktop/basic-statistical-machine-translation/data/cleaned/test-sgm/test.my.ref.sgm [1779309494]
+INPUT = USED /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/ph-my/evaluation/test.detokenized.sgm.2 /home/lawun330/Desktop/basic-statistical-machine-translation/data/cleaned/test-sgm/test.my.ref.sgm
+nist-bleu-c = /home/lawun330/NLP/ubuntu-17.04/moses/scripts/generic/mteval-v13a.pl -c [1779337639]
+# reuse run 2 for EVALUATION:test:wrap
