@@ -1,0 +1,209 @@
+Using SCRIPTS_ROOTDIR: /home/lawun330/NLP/ubuntu-17.04/moses/scripts
+Asking moses for feature names and values from /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/tuning/moses.filtered.ini.2
+Executing: /home/lawun330/NLP/ubuntu-17.04/moses/bin/moses  -v 0  -config /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/tuning/moses.filtered.ini.2 -show-weights
+exec: /home/lawun330/NLP/ubuntu-17.04/moses/bin/moses  -v 0  -config /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/tuning/moses.filtered.ini.2 -show-weights
+Executing: /home/lawun330/NLP/ubuntu-17.04/moses/bin/moses  -v 0  -config /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/tuning/moses.filtered.ini.2 -show-weights > ./features.list 2> /dev/null
+MERT starting values and ranges for random generation:
+  LexicalReordering0 =   0.300 ( 0.00 ..  1.00)
+  LexicalReordering0 =   0.300 ( 0.00 ..  1.00)
+  LexicalReordering0 =   0.300 ( 0.00 ..  1.00)
+  LexicalReordering0 =   0.300 ( 0.00 ..  1.00)
+  LexicalReordering0 =   0.300 ( 0.00 ..  1.00)
+  LexicalReordering0 =   0.300 ( 0.00 ..  1.00)
+  Distortion0 =   0.300 ( 0.00 ..  1.00)
+    LM0 =   0.500 ( 0.00 ..  1.00)
+  WordPenalty0 =  -1.000 ( 0.00 ..  1.00)
+  PhrasePenalty0 =   0.200 ( 0.00 ..  1.00)
+  TranslationModel0 =   0.200 ( 0.00 ..  1.00)
+  TranslationModel0 =   0.200 ( 0.00 ..  1.00)
+  TranslationModel0 =   0.200 ( 0.00 ..  1.00)
+  TranslationModel0 =   0.200 ( 0.00 ..  1.00)
+featlist: LexicalReordering0=0.300000 
+featlist: LexicalReordering0=0.300000 
+featlist: LexicalReordering0=0.300000 
+featlist: LexicalReordering0=0.300000 
+featlist: LexicalReordering0=0.300000 
+featlist: LexicalReordering0=0.300000 
+featlist: Distortion0=0.300000 
+featlist: LM0=0.500000 
+featlist: WordPenalty0=-1.000000 
+featlist: PhrasePenalty0=0.200000 
+featlist: TranslationModel0=0.200000 
+featlist: TranslationModel0=0.200000 
+featlist: TranslationModel0=0.200000 
+featlist: TranslationModel0=0.200000 
+Saved: ./run1.moses.ini
+Normalizing lambdas: 0.300000 0.300000 0.300000 0.300000 0.300000 0.300000 0.300000 0.500000 -1.000000 0.200000 0.200000 0.200000 0.200000 0.200000
+DECODER_CFG = -weight-overwrite 'Distortion0= 0.065217 PhrasePenalty0= 0.043478 TranslationModel0= 0.043478 0.043478 0.043478 0.043478 LexicalReordering0= 0.065217 0.065217 0.065217 0.065217 0.065217 0.065217 LM0= 0.108696 WordPenalty0= -0.217391'
+Executing: /home/lawun330/NLP/ubuntu-17.04/moses/bin/moses -v 0   -config /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/tuning/moses.filtered.ini.2 -weight-overwrite 'Distortion0= 0.065217 PhrasePenalty0= 0.043478 TranslationModel0= 0.043478 0.043478 0.043478 0.043478 LexicalReordering0= 0.065217 0.065217 0.065217 0.065217 0.065217 0.065217 LM0= 0.108696 WordPenalty0= -0.217391'  -n-best-list run1.best100.out 100 distinct  -input-file /home/lawun330/Desktop/basic-statistical-machine-translation/data/cleaned_2/dev.my > run1.out 
+Executing: /home/lawun330/NLP/ubuntu-17.04/moses/bin/moses -v 0   -config /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/tuning/moses.filtered.ini.2 -weight-overwrite 'Distortion0= 0.065217 PhrasePenalty0= 0.043478 TranslationModel0= 0.043478 0.043478 0.043478 0.043478 LexicalReordering0= 0.065217 0.065217 0.065217 0.065217 0.065217 0.065217 LM0= 0.108696 WordPenalty0= -0.217391'  -n-best-list run1.best100.out 100 distinct  -input-file /home/lawun330/Desktop/basic-statistical-machine-translation/data/cleaned_2/dev.my > run1.out
+Loading table into memory...done.
+Name:moses	VmPeak:158824 kB	VmRSS:17512 kB	RSSMax:22456 kB	user:1.900	sys:0.044	CPU:1.944	real:1.930
+The decoder returns the scores in this order: LexicalReordering0 LexicalReordering0 LexicalReordering0 LexicalReordering0 LexicalReordering0 LexicalReordering0 Distortion0 LM0 WordPenalty0 PhrasePenalty0 TranslationModel0 TranslationModel0 TranslationModel0 TranslationModel0
+Executing: gzip -f run1.best100.out
+Scoring the nbestlist.
+exec: /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/tuning/tmp.2/extractor.sh
+Executing: /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/tuning/tmp.2/extractor.sh > extract.out 2> extract.err
+Executing: \cp -f init.opt run1.init.opt
+exec: /home/lawun330/NLP/ubuntu-17.04/moses/bin/mert -d 14  --sctype BLEU --scconfig case:true --ffile run1.features.dat --scfile run1.scores.dat --ifile run1.init.opt -n 20
+Executing: /home/lawun330/NLP/ubuntu-17.04/moses/bin/mert -d 14  --sctype BLEU --scconfig case:true --ffile run1.features.dat --scfile run1.scores.dat --ifile run1.init.opt -n 20 > mert.out 2> mert.log
+Executing: \cp -f extract.err run1.extract.err
+Executing: \cp -f extract.out run1.extract.out
+Executing: \cp -f mert.out run1.mert.out
+Executing: \cp -f mert.log run1.mert.log
+Executing: touch mert.log run1.mert.log
+Executing: \cp -f weights.txt run1.weights.txt
+featlist: LexicalReordering0=0.0118831 
+featlist: LexicalReordering0=0.0152083 
+featlist: LexicalReordering0=0.0112816 
+featlist: LexicalReordering0=0.151356 
+featlist: LexicalReordering0=0.0313371 
+featlist: LexicalReordering0=0.0875752 
+featlist: Distortion0=0.0745874 
+featlist: LM0=0.0940258 
+featlist: WordPenalty0=0.285555 
+featlist: PhrasePenalty0=0.0164778 
+featlist: TranslationModel0=0.165273 
+featlist: TranslationModel0=-0.0171316 
+featlist: TranslationModel0=0.0022719 
+featlist: TranslationModel0=0.0360364 
+Saved: ./run2.moses.ini
+DECODER_CFG = -weight-overwrite 'WordPenalty0= 0.285555 LM0= 0.094026 PhrasePenalty0= 0.016478 Distortion0= 0.074587 LexicalReordering0= 0.011883 0.015208 0.011282 0.151356 0.031337 0.087575 TranslationModel0= 0.165273 -0.017132 0.002272 0.036036'
+Executing: /home/lawun330/NLP/ubuntu-17.04/moses/bin/moses -v 0   -config /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/tuning/moses.filtered.ini.2 -weight-overwrite 'WordPenalty0= 0.285555 LM0= 0.094026 PhrasePenalty0= 0.016478 Distortion0= 0.074587 LexicalReordering0= 0.011883 0.015208 0.011282 0.151356 0.031337 0.087575 TranslationModel0= 0.165273 -0.017132 0.002272 0.036036'  -n-best-list run2.best100.out 100 distinct  -input-file /home/lawun330/Desktop/basic-statistical-machine-translation/data/cleaned_2/dev.my > run2.out 
+Executing: /home/lawun330/NLP/ubuntu-17.04/moses/bin/moses -v 0   -config /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/tuning/moses.filtered.ini.2 -weight-overwrite 'WordPenalty0= 0.285555 LM0= 0.094026 PhrasePenalty0= 0.016478 Distortion0= 0.074587 LexicalReordering0= 0.011883 0.015208 0.011282 0.151356 0.031337 0.087575 TranslationModel0= 0.165273 -0.017132 0.002272 0.036036'  -n-best-list run2.best100.out 100 distinct  -input-file /home/lawun330/Desktop/basic-statistical-machine-translation/data/cleaned_2/dev.my > run2.out
+Loading table into memory...done.
+Name:moses	VmPeak:158824 kB	VmRSS:15884 kB	RSSMax:22728 kB	user:2.018	sys:0.050	CPU:2.068	real:2.048
+The decoder returns the scores in this order: LexicalReordering0 LexicalReordering0 LexicalReordering0 LexicalReordering0 LexicalReordering0 LexicalReordering0 Distortion0 LM0 WordPenalty0 PhrasePenalty0 TranslationModel0 TranslationModel0 TranslationModel0 TranslationModel0
+Executing: gzip -f run2.best100.out
+Scoring the nbestlist.
+exec: /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/tuning/tmp.2/extractor.sh
+Executing: /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/tuning/tmp.2/extractor.sh > extract.out 2> extract.err
+Executing: \cp -f init.opt run2.init.opt
+exec: /home/lawun330/NLP/ubuntu-17.04/moses/bin/mert -d 14  --sctype BLEU --scconfig case:true --ffile run1.features.dat,run2.features.dat --scfile run1.scores.dat,run2.scores.dat --ifile run2.init.opt -n 20
+Executing: /home/lawun330/NLP/ubuntu-17.04/moses/bin/mert -d 14  --sctype BLEU --scconfig case:true --ffile run1.features.dat,run2.features.dat --scfile run1.scores.dat,run2.scores.dat --ifile run2.init.opt -n 20 > mert.out 2> mert.log
+Executing: \cp -f extract.err run2.extract.err
+Executing: \cp -f extract.out run2.extract.out
+Executing: \cp -f mert.out run2.mert.out
+Executing: \cp -f mert.log run2.mert.log
+Executing: touch mert.log run2.mert.log
+Executing: \cp -f weights.txt run2.weights.txt
+featlist: LexicalReordering0=-0.0755176 
+featlist: LexicalReordering0=0.00990548 
+featlist: LexicalReordering0=0.0467179 
+featlist: LexicalReordering0=0.00256462 
+featlist: LexicalReordering0=0.0622142 
+featlist: LexicalReordering0=0.0912499 
+featlist: Distortion0=0.0673146 
+featlist: LM0=0.0862283 
+featlist: WordPenalty0=0.292166 
+featlist: PhrasePenalty0=0.0376026 
+featlist: TranslationModel0=0.13752 
+featlist: TranslationModel0=0.00254084 
+featlist: TranslationModel0=0.0651624 
+featlist: TranslationModel0=-0.0232956 
+Saved: ./run3.moses.ini
+DECODER_CFG = -weight-overwrite 'TranslationModel0= 0.137520 0.002541 0.065162 -0.023296 LexicalReordering0= -0.075518 0.009905 0.046718 0.002565 0.062214 0.091250 Distortion0= 0.067315 PhrasePenalty0= 0.037603 LM0= 0.086228 WordPenalty0= 0.292166'
+Executing: /home/lawun330/NLP/ubuntu-17.04/moses/bin/moses -v 0   -config /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/tuning/moses.filtered.ini.2 -weight-overwrite 'TranslationModel0= 0.137520 0.002541 0.065162 -0.023296 LexicalReordering0= -0.075518 0.009905 0.046718 0.002565 0.062214 0.091250 Distortion0= 0.067315 PhrasePenalty0= 0.037603 LM0= 0.086228 WordPenalty0= 0.292166'  -n-best-list run3.best100.out 100 distinct  -input-file /home/lawun330/Desktop/basic-statistical-machine-translation/data/cleaned_2/dev.my > run3.out 
+Executing: /home/lawun330/NLP/ubuntu-17.04/moses/bin/moses -v 0   -config /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/tuning/moses.filtered.ini.2 -weight-overwrite 'TranslationModel0= 0.137520 0.002541 0.065162 -0.023296 LexicalReordering0= -0.075518 0.009905 0.046718 0.002565 0.062214 0.091250 Distortion0= 0.067315 PhrasePenalty0= 0.037603 LM0= 0.086228 WordPenalty0= 0.292166'  -n-best-list run3.best100.out 100 distinct  -input-file /home/lawun330/Desktop/basic-statistical-machine-translation/data/cleaned_2/dev.my > run3.out
+Loading table into memory...done.
+Name:moses	VmPeak:158824 kB	VmRSS:22068 kB	RSSMax:22732 kB	user:1.959	sys:0.039	CPU:1.998	real:1.977
+The decoder returns the scores in this order: LexicalReordering0 LexicalReordering0 LexicalReordering0 LexicalReordering0 LexicalReordering0 LexicalReordering0 Distortion0 LM0 WordPenalty0 PhrasePenalty0 TranslationModel0 TranslationModel0 TranslationModel0 TranslationModel0
+Executing: gzip -f run3.best100.out
+Scoring the nbestlist.
+exec: /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/tuning/tmp.2/extractor.sh
+Executing: /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/tuning/tmp.2/extractor.sh > extract.out 2> extract.err
+Executing: \cp -f init.opt run3.init.opt
+exec: /home/lawun330/NLP/ubuntu-17.04/moses/bin/mert -d 14  --sctype BLEU --scconfig case:true --ffile run1.features.dat,run2.features.dat,run3.features.dat --scfile run1.scores.dat,run2.scores.dat,run3.scores.dat --ifile run3.init.opt -n 20
+Executing: /home/lawun330/NLP/ubuntu-17.04/moses/bin/mert -d 14  --sctype BLEU --scconfig case:true --ffile run1.features.dat,run2.features.dat,run3.features.dat --scfile run1.scores.dat,run2.scores.dat,run3.scores.dat --ifile run3.init.opt -n 20 > mert.out 2> mert.log
+Executing: \cp -f extract.err run3.extract.err
+Executing: \cp -f extract.out run3.extract.out
+Executing: \cp -f mert.out run3.mert.out
+Executing: \cp -f mert.log run3.mert.log
+Executing: touch mert.log run3.mert.log
+Executing: \cp -f weights.txt run3.weights.txt
+featlist: LexicalReordering0=0.210287 
+featlist: LexicalReordering0=0.0788934 
+featlist: LexicalReordering0=0.0391346 
+featlist: LexicalReordering0=0.00689176 
+featlist: LexicalReordering0=0.176667 
+featlist: LexicalReordering0=0.0974574 
+featlist: Distortion0=0.00300013 
+featlist: LM0=0.0481325 
+featlist: WordPenalty0=0.155582 
+featlist: PhrasePenalty0=-0.017015 
+featlist: TranslationModel0=0.108407 
+featlist: TranslationModel0=-0.0279812 
+featlist: TranslationModel0=-0.00914012 
+featlist: TranslationModel0=0.0214112 
+Saved: ./run4.moses.ini
+DECODER_CFG = -weight-overwrite 'PhrasePenalty0= -0.017015 Distortion0= 0.003000 LexicalReordering0= 0.210287 0.078893 0.039135 0.006892 0.176667 0.097457 TranslationModel0= 0.108407 -0.027981 -0.009140 0.021411 WordPenalty0= 0.155582 LM0= 0.048133'
+Executing: /home/lawun330/NLP/ubuntu-17.04/moses/bin/moses -v 0   -config /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/tuning/moses.filtered.ini.2 -weight-overwrite 'PhrasePenalty0= -0.017015 Distortion0= 0.003000 LexicalReordering0= 0.210287 0.078893 0.039135 0.006892 0.176667 0.097457 TranslationModel0= 0.108407 -0.027981 -0.009140 0.021411 WordPenalty0= 0.155582 LM0= 0.048133'  -n-best-list run4.best100.out 100 distinct  -input-file /home/lawun330/Desktop/basic-statistical-machine-translation/data/cleaned_2/dev.my > run4.out 
+Executing: /home/lawun330/NLP/ubuntu-17.04/moses/bin/moses -v 0   -config /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/tuning/moses.filtered.ini.2 -weight-overwrite 'PhrasePenalty0= -0.017015 Distortion0= 0.003000 LexicalReordering0= 0.210287 0.078893 0.039135 0.006892 0.176667 0.097457 TranslationModel0= 0.108407 -0.027981 -0.009140 0.021411 WordPenalty0= 0.155582 LM0= 0.048133'  -n-best-list run4.best100.out 100 distinct  -input-file /home/lawun330/Desktop/basic-statistical-machine-translation/data/cleaned_2/dev.my > run4.out
+Loading table into memory...done.
+Name:moses	VmPeak:158824 kB	VmRSS:21936 kB	RSSMax:22636 kB	user:1.837	sys:0.051	CPU:1.888	real:1.868
+The decoder returns the scores in this order: LexicalReordering0 LexicalReordering0 LexicalReordering0 LexicalReordering0 LexicalReordering0 LexicalReordering0 Distortion0 LM0 WordPenalty0 PhrasePenalty0 TranslationModel0 TranslationModel0 TranslationModel0 TranslationModel0
+Executing: gzip -f run4.best100.out
+Scoring the nbestlist.
+exec: /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/tuning/tmp.2/extractor.sh
+Executing: /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/tuning/tmp.2/extractor.sh > extract.out 2> extract.err
+Executing: \cp -f init.opt run4.init.opt
+exec: /home/lawun330/NLP/ubuntu-17.04/moses/bin/mert -d 14  --sctype BLEU --scconfig case:true --ffile run1.features.dat,run2.features.dat,run3.features.dat,run4.features.dat --scfile run1.scores.dat,run2.scores.dat,run3.scores.dat,run4.scores.dat --ifile run4.init.opt -n 20
+Executing: /home/lawun330/NLP/ubuntu-17.04/moses/bin/mert -d 14  --sctype BLEU --scconfig case:true --ffile run1.features.dat,run2.features.dat,run3.features.dat,run4.features.dat --scfile run1.scores.dat,run2.scores.dat,run3.scores.dat,run4.scores.dat --ifile run4.init.opt -n 20 > mert.out 2> mert.log
+Executing: \cp -f extract.err run4.extract.err
+Executing: \cp -f extract.out run4.extract.out
+Executing: \cp -f mert.out run4.mert.out
+Executing: \cp -f mert.log run4.mert.log
+Executing: touch mert.log run4.mert.log
+Executing: \cp -f weights.txt run4.weights.txt
+featlist: LexicalReordering0=0.20999 
+featlist: LexicalReordering0=0.0787821 
+featlist: LexicalReordering0=0.0390794 
+featlist: LexicalReordering0=0.00688204 
+featlist: LexicalReordering0=0.176418 
+featlist: LexicalReordering0=0.0973199 
+featlist: Distortion0=0.0029959 
+featlist: LM0=0.0480646 
+featlist: WordPenalty0=0.157285 
+featlist: PhrasePenalty0=-0.016991 
+featlist: TranslationModel0=0.108254 
+featlist: TranslationModel0=-0.0274304 
+featlist: TranslationModel0=-0.00912722 
+featlist: TranslationModel0=0.021381 
+Saved: ./run5.moses.ini
+DECODER_CFG = -weight-overwrite 'LexicalReordering0= 0.209990 0.078782 0.039079 0.006882 0.176418 0.097320 TranslationModel0= 0.108254 -0.027430 -0.009127 0.021381 PhrasePenalty0= -0.016991 Distortion0= 0.002996 WordPenalty0= 0.157285 LM0= 0.048065'
+Executing: /home/lawun330/NLP/ubuntu-17.04/moses/bin/moses -v 0   -config /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/tuning/moses.filtered.ini.2 -weight-overwrite 'LexicalReordering0= 0.209990 0.078782 0.039079 0.006882 0.176418 0.097320 TranslationModel0= 0.108254 -0.027430 -0.009127 0.021381 PhrasePenalty0= -0.016991 Distortion0= 0.002996 WordPenalty0= 0.157285 LM0= 0.048065'  -n-best-list run5.best100.out 100 distinct  -input-file /home/lawun330/Desktop/basic-statistical-machine-translation/data/cleaned_2/dev.my > run5.out 
+Executing: /home/lawun330/NLP/ubuntu-17.04/moses/bin/moses -v 0   -config /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/tuning/moses.filtered.ini.2 -weight-overwrite 'LexicalReordering0= 0.209990 0.078782 0.039079 0.006882 0.176418 0.097320 TranslationModel0= 0.108254 -0.027430 -0.009127 0.021381 PhrasePenalty0= -0.016991 Distortion0= 0.002996 WordPenalty0= 0.157285 LM0= 0.048065'  -n-best-list run5.best100.out 100 distinct  -input-file /home/lawun330/Desktop/basic-statistical-machine-translation/data/cleaned_2/dev.my > run5.out
+Loading table into memory...done.
+Name:moses	VmPeak:158824 kB	VmRSS:17560 kB	RSSMax:22644 kB	user:1.877	sys:0.056	CPU:1.933	real:1.915
+The decoder returns the scores in this order: LexicalReordering0 LexicalReordering0 LexicalReordering0 LexicalReordering0 LexicalReordering0 LexicalReordering0 Distortion0 LM0 WordPenalty0 PhrasePenalty0 TranslationModel0 TranslationModel0 TranslationModel0 TranslationModel0
+Executing: gzip -f run5.best100.out
+Scoring the nbestlist.
+exec: /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/tuning/tmp.2/extractor.sh
+Executing: /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/tuning/tmp.2/extractor.sh > extract.out 2> extract.err
+Executing: \cp -f init.opt run5.init.opt
+exec: /home/lawun330/NLP/ubuntu-17.04/moses/bin/mert -d 14  --sctype BLEU --scconfig case:true --ffile run1.features.dat,run2.features.dat,run3.features.dat,run4.features.dat,run5.features.dat --scfile run1.scores.dat,run2.scores.dat,run3.scores.dat,run4.scores.dat,run5.scores.dat --ifile run5.init.opt -n 20
+Executing: /home/lawun330/NLP/ubuntu-17.04/moses/bin/mert -d 14  --sctype BLEU --scconfig case:true --ffile run1.features.dat,run2.features.dat,run3.features.dat,run4.features.dat,run5.features.dat --scfile run1.scores.dat,run2.scores.dat,run3.scores.dat,run4.scores.dat,run5.scores.dat --ifile run5.init.opt -n 20 > mert.out 2> mert.log
+Executing: \cp -f extract.err run5.extract.err
+Executing: \cp -f extract.out run5.extract.out
+Executing: \cp -f mert.out run5.mert.out
+Executing: \cp -f mert.log run5.mert.log
+Executing: touch mert.log run5.mert.log
+Executing: \cp -f weights.txt run5.weights.txt
+None of the weights changed more than 1e-05. Stopping.
+Executing: \cp -f init.opt run5.init.opt
+Executing: \cp -f mert.log run5.mert.log
+featlist: LexicalReordering0=0.20999 
+featlist: LexicalReordering0=0.0787821 
+featlist: LexicalReordering0=0.0390794 
+featlist: LexicalReordering0=0.00688204 
+featlist: LexicalReordering0=0.176418 
+featlist: LexicalReordering0=0.0973198 
+featlist: Distortion0=0.0029959 
+featlist: LM0=0.0480646 
+featlist: WordPenalty0=0.157285 
+featlist: PhrasePenalty0=-0.016991 
+featlist: TranslationModel0=0.108254 
+featlist: TranslationModel0=-0.0274304 
+featlist: TranslationModel0=-0.00912721 
+featlist: TranslationModel0=0.021381 
+Saved: ./moses.ini

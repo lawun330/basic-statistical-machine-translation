@@ -1,0 +1,6 @@
+lexicalized-reordering = msd-bidirectional-fe
+score-settings = --GoodTuring
+script = /home/lawun330/NLP/ubuntu-17.04/moses/scripts/training/train-model.perl [1506443775]
+INPUT = USED /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/model/reordering-table.1 /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/model/phrase-table.1       /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/lm/myg2p-data.binlm.2
+# reuse run 1 for TRAINING:build-reordering
+# reuse run 1 for TRAINING:build-ttable

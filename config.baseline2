@@ -141,7 +141,7 @@ settings = "--prune '0 0 1' -T $working-dir/lm -S 20% --discount_fallback"
 #lm-binarizer = $moses-bin-dir/build_binary
 
 # order of the language model
-order = 5
+order = 3 # -- EDIT HERE --
 
 ### tool to be used for training randomized language model from scratch
 # (more commonly, a SRILM is trained)

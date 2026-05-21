@@ -1,0 +1,24 @@
+shard_size = 0 shard_count = 0
+Seeding random numbers with system clock 
+name: case value: true
+Data::m_score_type BLEU
+Data::Scorer type from Scorer: BLEU
+Loading Data from: run1.scores.dat and run1.features.dat
+loading feature data from run1.features.dat
+loading score data from run1.scores.dat
+Loading Data from: run2.scores.dat and run2.features.dat
+loading feature data from run2.features.dat
+loading score data from run2.scores.dat
+Loading Data from: run3.scores.dat and run3.features.dat
+loading feature data from run3.features.dat
+loading score data from run3.scores.dat
+Loading Data from: run4.scores.dat and run4.features.dat
+loading feature data from run4.features.dat
+loading score data from run4.scores.dat
+Loading Data from: run5.scores.dat and run5.features.dat
+loading feature data from run5.features.dat
+loading score data from run5.scores.dat
+Data loaded : [Wall 1.90312 CPU 1.9025] seconds.
+Creating a pool of 1 threads
+Best point: 0.0505814 0.0241752 0.0366955 -0.116911 0.10117 0.00385257 0.0669026 0.0727815 -0.169004 -0.254357 0.0147099 0.0671075 0.0200055 0.00174685  => 0.785667
+Stopping... : [Wall 51.1432 CPU 51.1327] seconds.
