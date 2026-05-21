@@ -1,0 +1,2 @@
+max-sentence-length = 80
+INPUT = USED /home/lawun330/Desktop/basic-statistical-machine-translation/data/cleaned_2/train

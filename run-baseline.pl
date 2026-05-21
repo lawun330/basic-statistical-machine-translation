@@ -15,7 +15,7 @@ use autodie qw(:all);
 
 # You have to update following path!!!
 
-my @configs = `find /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/*/ -name "config.baseline*" | sort`; # -- EDIT HERE --
+my @configs = `find /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/*/ -name "config.baseline2*" | sort`; # -- EDIT HERE --
 
 # for debugging
 # print "config files: @configs\n";
@@ -38,7 +38,7 @@ foreach my $i (0..$#configs)
 
 	print "$jobName $config\n";
 
-	`/home/lawun330/NLP/ubuntu-17.04/moses/scripts/ems/experiment.perl -config $config -exec -no-graph 2>&1 | tee -a /home/lawun330/Desktop/basic-statistical-machine-translation/baseline/logs/run1.log`; # -- EDIT HERE --
+	`/home/lawun330/NLP/ubuntu-17.04/moses/scripts/ems/experiment.perl -config $config -exec -no-graph 2>&1 | tee -a /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/runs.log`; # -- EDIT HERE --
 	
 #	my @toks = split /\./, $o_config;
 #	my $jobName = "$toks[$#toks]-$toks[$#toks - 1]";

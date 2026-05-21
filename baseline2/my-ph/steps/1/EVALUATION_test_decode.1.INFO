@@ -1,0 +1,5 @@
+INPUT = USED /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/tuning/moses.tuned.ini.1 /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/evaluation/test.input.txt.1 /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/evaluation/test.filtered.ini.1
+report-precision-by-coverage = yes
+decoder-settings = -search-algorithm 1 -cube-pruning-pop-limit 5000 -s 5000
+report-segmentation = yes
+decoder = /home/lawun330/NLP/ubuntu-17.04/moses/bin/moses [1506443762]

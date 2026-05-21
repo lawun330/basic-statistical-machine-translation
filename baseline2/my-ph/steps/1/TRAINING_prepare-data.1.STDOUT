@@ -1,0 +1,24 @@
+starting at Fri May 22 04:19:38 AM +07 2026 on ROG-Strix-Hero-II
+Forking...
+
+***** 2 runs. (algorithm:TA)*****
+;KategProblem:cats: 50   words: 1834
+
+start-costs: MEAN: 857136 (857128-857145)  SIGMA:8.37319   
+  end-costs: MEAN: 832260 (832184-832336)  SIGMA:75.8969   
+   start-pp: MEAN: 197.388 (197.367-197.41)  SIGMA:0.0213685   
+     end-pp: MEAN: 143.101 (142.961-143.242)  SIGMA:0.14042   
+ iterations: MEAN: 45167.5 (45052-45283)  SIGMA:115.5   
+       time: MEAN: 1.09441 (1.09151-1.09731)  SIGMA:0.0029005   
+
+***** 2 runs. (algorithm:TA)*****
+;KategProblem:cats: 50   words: 2283
+
+start-costs: MEAN: 855931 (855847-856016)  SIGMA:84.6688   
+  end-costs: MEAN: 830949 (830940-830959)  SIGMA:9.55497   
+   start-pp: MEAN: 200.271 (200.052-200.491)  SIGMA:0.219402   
+     end-pp: MEAN: 144.956 (144.938-144.973)  SIGMA:0.017921   
+ iterations: MEAN: 62045 (58935-65155)  SIGMA:3110   
+       time: MEAN: 1.22363 (1.16203-1.28522)  SIGMA:0.061595   
+Waiting for mkcls processes to finish...
+finished at Fri May 22 04:19:41 AM +07 2026

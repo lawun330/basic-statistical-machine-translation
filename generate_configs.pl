@@ -20,14 +20,14 @@ my @langs;
 my $smtpath = "/home/lawun330/Desktop/basic-statistical-machine-translation"; # -- EDIT HERE --
 
 # you have to update the data path for running PBSMT experiment!!!
-foreach my $trainFile ( </home/lawun330/Desktop/basic-statistical-machine-translation/data/cleaned/train.[a-z][a-z]> ) # -- EDIT HERE --
+foreach my $trainFile ( </home/lawun330/Desktop/basic-statistical-machine-translation/data/cleaned_2/train.[a-z][a-z]> ) # -- EDIT HERE --
 {                        
         $trainFile =~ m/train.([a-z][a-z])/;
         
         push @langs, $1;
 }
 
-foreach my $expt (qw/baseline/)
+foreach my $expt (qw/baseline2/)
 {
 die("$smtpath/$expt") if (-d "$smtpath/$expt");
 `mkdir $smtpath/$expt`;

@@ -1,0 +1,3 @@
+clean-corpus.perl: processing /home/lawun330/Desktop/basic-statistical-machine-translation/data/cleaned_2/train.my & .ph to /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/corpus/myg2p-data.clean.1, cutoff 1-80, ratio 9
+..
+Input sentences: 20000  Output sentences:  20000

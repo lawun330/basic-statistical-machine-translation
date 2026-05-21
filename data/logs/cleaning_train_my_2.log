@@ -1,0 +1,56 @@
+line    175 | 'ဖိမ့် ဖိမ့်'                  -> 'ဖိမ့်ဖိမ့်'                   | stage3:merge_with_previous
+line    366 | 'ဟာ ရဋ်'                       -> 'ဟာရဋ်'                        | stage3:merge_with_previous
+line    922 | 'ဒ ယဉ့်'                       -> 'ဒယဉ့်'                        | stage3:merge_with_previous
+line   1178 | 'စ ကားဖောင်'                   -> 'စကားဖောင်'                    | stage3:merge_with_previous
+line   1551 | 'ဝံ ပိုင့်'                    -> 'ဝံပိုင့်'                     | stage3:merge_with_previous
+line   1600 | 'ခ ဏုပ်'                       -> 'ခဏုပ်'                        | stage3:merge_with_previous
+line   1731 | 'ခံ သေတ်'                      -> 'ခံသေတ်'                       | stage3:merge_with_previous
+line   2368 | 'စုံ သေတ်'                     -> 'စုံသေတ်'                      | stage3:merge_with_previous
+line   2388 | 'ကုက် ကုစ်'                    -> 'ကုက်ကုစ်'                     | stage3:merge_with_previous
+line   2699 | 'အမ် ဗုန်'                     -> 'အမ်ဗုန်'                      | stage3:merge_with_previous
+line   2717 | 'စ ခွန့်'                      -> 'စခွန့်'                       | stage3:merge_with_previous
+line   2918 | 'ဖြစ် ခေါင့်'                  -> 'ဖြစ်ခေါင့်'                   | stage3:merge_with_previous
+line   2923 | 'စျေး'                         -> 'ဈေး'                          | stage1:rule28 (စျ -> ဈ (two-consonant form to single char))
+line   3201 | 'အ ဝှန့်'                      -> 'အဝှန့်'                       | stage3:merge_with_previous
+line   3846 | 'အ မြှောင့်'                   -> 'အမြှောင့်'                    | stage3:merge_with_previous
+line   3933 | 'မြုန့် မြုန့်'                -> 'မြုန့်မြုန့်'                 | stage3:merge_with_previous
+line   4334 | 'မတ် တဏ်'                      -> 'မတ်တဏ်'                       | stage3:merge_with_previous
+line   4738 | 'က ဋုက်'                       -> 'ကဋုက်'                        | stage3:merge_with_previous
+line   4998 | 'ဝံ ပိုင့်'                    -> 'ဝံပိုင့်'                     | stage3:merge_with_previous
+line   5398 | 'ပ သလ်'                        -> 'ပသလ်'                         | stage3:merge_with_previous
+line   6211 | 'ဇာ တိက်'                      -> 'ဇာတိက်'                       | stage3:merge_with_previous
+line   7224 | 'စည့် စည့်'                    -> 'စည့်စည့်'                     | stage3:merge_with_previous
+line   7451 | 'အာ ထဗ်'                       -> 'အာထဗ်'                        | stage3:merge_with_previous
+line   8699 | 'ခဲ သေတ်'                      -> 'ခဲသေတ်'                       | stage3:merge_with_previous
+line   8756 | 'သ လည့်'                       -> 'သလည့်'                        | stage3:merge_with_previous
+line   8823 | 'စျေး'                         -> 'ဈေး'                          | stage1:rule28 (စျ -> ဈ (two-consonant form to single char))
+line   8842 | 'မြီး နှန့်'                   -> 'မြီးနှန့်'                    | stage3:merge_with_previous
+line   9684 | 'စျေး'                         -> 'ဈေး'                          | stage1:rule28 (စျ -> ဈ (two-consonant form to single char))
+line   9796 | 'အ မြိုင့်'                    -> 'အမြိုင့်'                     | stage3:merge_with_previous
+line  10809 | 'ပက် ခွန့်'                    -> 'ပက်ခွန့်'                     | stage3:merge_with_previous
+line  11224 | 'တ ဖျင့်'                      -> 'တဖျင့်'                       | stage3:merge_with_previous
+line  11239 | 'ပဇ် ဈာယ်'                     -> 'ပဇ်ဈာယ်'                      | stage3:merge_with_previous
+line  11301 | 'ငါး သေတ်'                     -> 'ငါးသေတ်'                      | stage3:merge_with_previous
+line  11322 | 'စျေး'                         -> 'ဈေး'                          | stage1:rule28 (စျ -> ဈ (two-consonant form to single char))
+line  11347 | 'ဖွေ နှည်'                     -> 'ဖွေနှည်'                      | stage3:merge_with_previous
+line  11499 | 'ရိ ပွပ်'                      -> 'ရိပွပ်'                       | stage3:merge_with_previous
+line  12473 | 'ဋိ ဃာတ်'                      -> 'ဋိဃာတ်'                       | stage3:merge_with_previous
+line  12599 | 'တိုး ရှန့်'                   -> 'တိုးရှန့်'                    | stage3:merge_with_previous
+line  12775 | 'ရက် ခိုသ်'                    -> 'ရက်ခိုသ်'                     | stage3:merge_with_previous
+line  12959 | 'နီ ကြင့်'                     -> 'နီကြင့်'                      | stage3:merge_with_previous
+line  12959 | 'နီကြင့် ကြင့်'                -> 'နီကြင့်ကြင့်'                 | stage3:merge_with_previous
+line  13014 | 'ခံ သေတ်'                      -> 'ခံသေတ်'                       | stage3:merge_with_previous
+line  13217 | 'စျေး'                         -> 'ဈေး'                          | stage1:rule28 (စျ -> ဈ (two-consonant form to single char))
+line  13401 | 'တ ရှည့်'                      -> 'တရှည့်'                       | stage3:merge_with_previous
+line  13485 | 'စျေး'                         -> 'ဈေး'                          | stage1:rule28 (စျ -> ဈ (two-consonant form to single char))
+line  13513 | 'ပတ် ထမ်'                      -> 'ပတ်ထမ်'                       | stage3:merge_with_previous
+line  14064 | 'ညာ ဏက်'                       -> 'ညာဏက်'                        | stage3:merge_with_previous
+line  14573 | 'ဖောဋ် ဌဗ်'                    -> 'ဖောဋ်ဌဗ်'                     | stage3:merge_with_previous
+line  16738 | 'အာ ချာတ်'                     -> 'အာချာတ်'                      | stage3:merge_with_previous
+line  17290 | 'ဥဒ် ဓစ်'                      -> 'ဥဒ်ဓစ်'                       | stage3:merge_with_previous
+line  17291 | 'ဒ ယဉ့်'                       -> 'ဒယဉ့်'                        | stage3:merge_with_previous
+line  18005 | 'ပ ဋိစ်'                       -> 'ပဋိစ်'                        | stage3:merge_with_previous
+line  18005 | 'မုပ် ပာဒ်'                    -> 'မုပ်ပာဒ်'                     | stage3:merge_with_previous
+line  18310 | 'အဋ် ဌင်'                      -> 'အဋ်ဌင်'                       | stage3:merge_with_previous
+line  19209 | 'ဧ ကဂ်'                        -> 'ဧကဂ်'                         | stage3:merge_with_previous
+line  19553 | 'ဖောင်း သေတ်'                  -> 'ဖောင်းသေတ်'                   | stage3:merge_with_previous

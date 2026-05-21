@@ -1,0 +1,10 @@
+Using SCRIPTS_ROOTDIR: /home/lawun330/NLP/ubuntu-17.04/moses/scripts
+using pigz 
+(3) generate word alignment @ Fri May 22 04:25:28 +07 2026
+Combining forward and inverted alignment from files:
+  /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/training/giza-inverse.1/ph-my.A3.final.{bz2,gz}
+  /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/training/giza.1/my-ph.A3.final.{bz2,gz}
+Executing: mkdir -p ./model
+Executing: /home/lawun330/NLP/ubuntu-17.04/moses/scripts/training/giza2bal.pl -d "pigz -cd /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/training/giza.1/my-ph.A3.final.gz" -i "pigz -cd /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/training/giza-inverse.1/ph-my.A3.final.gz" |/home/lawun330/NLP/ubuntu-17.04/moses/scripts/../bin/symal -alignment="grow" -diagonal="yes" -final="yes" -both="yes" > /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/model/aligned.1.grow-diag-final-and
+symal: computing grow alignment: diagonal (1) final (1)both-uncovered (1)
+skip=<0> counts=<20000>

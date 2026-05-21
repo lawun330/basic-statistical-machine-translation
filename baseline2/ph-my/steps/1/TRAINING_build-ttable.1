@@ -1,0 +1,11 @@
+#!/bin/bash
+
+PATH="/home/lawun330/anaconda3/envs/lu_burmese_domain_specific_lm_env/bin:/home/lawun330/.config/herd-lite/bin:/home/lawun330/.cargo/bin:/home/lawun330/.local/bin:/home/lawun330/.nvm/versions/node/v22.22.2/bin:/home/lawun330/anaconda3/condabin:/home/lawun330/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/lawun330/NLP/SRILM/bin/i686-m64"
+cd /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my
+echo 'starting at '`date`' on '`hostname`
+mkdir -p /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/training
+
+/home/lawun330/NLP/ubuntu-17.04/moses/scripts/training/train-model.perl -dont-zip -first-step 6 -last-step 6 -external-bin-dir /home/lawun330/NLP/giza-pp/GIZA++-v2 -f ph -e my -alignment grow-diag-final-and -max-phrase-length 5 -reordering msd-bidirectional-fe -score-options '--GoodTuring' -parallel -extract-file /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/model/extract.1 -lexical-file /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/model/lex.1 -phrase-translation-table /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/model/phrase-table.1 
+
+echo 'finished at '`date`
+touch /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/steps/1/TRAINING_build-ttable.1.DONE

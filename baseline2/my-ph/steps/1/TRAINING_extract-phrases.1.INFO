@@ -1,0 +1,4 @@
+INPUT = USED /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/model/aligned.1 /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/training/corpus.1
+max-phrase-length = 5
+lexicalized-reordering = msd-bidirectional-fe
+script = /home/lawun330/NLP/ubuntu-17.04/moses/scripts/training/train-model.perl [1506443775]

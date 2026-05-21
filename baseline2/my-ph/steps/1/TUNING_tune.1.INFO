@@ -1,0 +1,4 @@
+decoder = /home/lawun330/NLP/ubuntu-17.04/moses/bin/moses [1506443762]
+nbest = 100
+tuning-settings = -mertdir /home/lawun330/NLP/ubuntu-17.04/moses/bin
+INPUT = USED /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/model/moses.ini.1 /home/lawun330/Desktop/basic-statistical-machine-translation/data/cleaned_2/dev.my /home/lawun330/Desktop/basic-statistical-machine-translation/data/cleaned_2/dev.ph    /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/tuning/moses.filtered.ini.1

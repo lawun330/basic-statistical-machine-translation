@@ -1,0 +1,9 @@
+line    231 | 'စျေး'                         -> 'ဈေး'                          | stage1:rule28 (စျ -> ဈ (two-consonant form to single char))
+line    353 | 'စျေး'                         -> 'ဈေး'                          | stage1:rule28 (စျ -> ဈ (two-consonant form to single char))
+line    750 | 'စျေး'                         -> 'ဈေး'                          | stage1:rule28 (စျ -> ဈ (two-consonant form to single char))
+line    791 | 'အ ဘိဇ်'                       -> 'အဘိဇ်'                        | stage3:merge_with_previous
+line    921 | 'စျေး'                         -> 'ဈေး'                          | stage1:rule28 (စျ -> ဈ (two-consonant form to single char))
+line   1059 | 'ဗန် ဓတ်'                      -> 'ဗန်ဓတ်'                       | stage3:merge_with_previous
+line   1099 | 'တိုက် သေတ်'                   -> 'တိုက်သေတ်'                    | stage3:merge_with_previous
+line   1428 | 'အာ ယုဗ်'                      -> 'အာယုဗ်'                       | stage3:merge_with_previous
+line   1482 | 'ရေ သေတ်'                      -> 'ရေသေတ်'                       | stage3:merge_with_previous

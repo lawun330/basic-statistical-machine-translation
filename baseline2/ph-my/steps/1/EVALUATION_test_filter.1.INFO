@@ -1,0 +1,2 @@
+report-precision-by-coverage = yes
+INPUT = USED /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/evaluation/test.input.txt.1 /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/model/phrase-table.1 /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/model/reordering-table.1  
