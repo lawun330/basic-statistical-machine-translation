@@ -4,6 +4,7 @@
 
 ## Error-Free PBSMT Workflow
 
+- Use Ubuntu-native Perl v5.38
 - Install Moses and GIZA++
 - Optionally configure paths in 
     - config.baseline, generate_configs.pl,
@@ -12,7 +13,11 @@
 - Create SGMs using `generate_sgms.pl`
 - Copy the `mkcls` file from the `giza-pp/mkcls-v2/` folder to the `giza-pp/GIZA++-v2/` folder
 - Install ImageMagick and Graphviz using sudo
-- Edit line 950 of `ubuntu-17.04/moses/scripts/generic/mteval-v13a.pl` to use *\p{Line_Break=Hyphen}* instead of *\p{Line_Break}*
+- Edit `ubuntu-17.04/moses/scripts/generic/mteval-v13a.pl`:
+    ```perl
+    line 950: \p{Line_Break} # replace this
+    line 950: \p{Line_Break=Hyphen} # with this
+    ```
 
 ## Dataset
 
@@ -25,7 +30,7 @@
 ├── img/
 ├── notebooks/
 │
-├── baseline/
+├── baseline/           # run1 to run3 with data v1
 │   ├── logs/
 │   ├── my-ph/
 │   │   ├── corpus/
@@ -34,24 +39,29 @@
 │   │   ├── model/
 │   │   ├── steps/
 │   │   ├── training/
-│   │   ├── tuning/
+│   │   └── tuning/
 │   └── ph-my/
 │       └── ...
+├── baseline2/          # run4 to run6 with data v2
+│   └── ...
 │
 ├── data/
 │   ├── g2p-par/                    # originally Sayar's
-│   ├── cleaned/
+│   ├── cleaned/                    # preprocessed data (version 1)
+│   │   ├── ...
 │   │   └── test-sgm/
 │   │       ├── generate_sgms.pl    # originally Sayar's
 │   │       ├── src2sgm.pl          # originally Sayar's
 │   │       └── ref2sgm.pl          # originally Sayar's
+│   ├── cleaned_2/                  # preprocessed data (version 2)
+│   │   └── ...
 │   └── logs/
 │
-├── syl-normalizer/                 # originally Sayar's
+├── syl-normalizer/     # originally Sayar's # modified to merge with previous token for athat (်) cases
 │
-├── config.baseline                 # originally Sayar's # modified paths # uncomment multi-bleu
-├── generate_configs.pl             # originally Sayar's # modified paths
-└── run-baseline.pl                 # originally Sayar's # modified paths
+├── config.baseline     # originally Sayar's # modified paths # uncomment multi-bleu
+├── generate_configs.pl # originally Sayar's # modified paths
+└── run-baseline.pl     # originally Sayar's # modified paths
 ```
 
 ## References
