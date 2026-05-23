@@ -1,0 +1,3 @@
+report-precision-by-coverage = yes
+INPUT = USED /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/evaluation/test.input.txt.1 /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/model/phrase-table.3 /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/model/reordering-table.3  
+# reuse run 1 for EVALUATION:test:input-from-sgm

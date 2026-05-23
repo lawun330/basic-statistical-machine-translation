@@ -390,7 +390,7 @@ lexicalized-reordering = msd-bidirectional-fe
 ### settings for rule extraction
 #
 #extract-settings = ""
-max-phrase-length = 5
+max-phrase-length = 3 # -- EDIT HERE --
 
 ### add extracted phrases from baseline model
 #

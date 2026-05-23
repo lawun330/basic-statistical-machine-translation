@@ -1,0 +1,8 @@
+Using SCRIPTS_ROOTDIR: /home/lawun330/NLP/ubuntu-17.04/moses/scripts
+using pigz 
+(7) learn reordering model @ Sat May 23 20:25:16 +07 2026
+(7.1) [no factors] learn reordering model @ Sat May 23 20:25:16 +07 2026
+(7.2) building tables @ Sat May 23 20:25:16 +07 2026
+Executing: /home/lawun330/NLP/ubuntu-17.04/moses/scripts/../bin/lexical-reordering-score /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/model/extract.3.o.sorted.gz 0.5 /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/model/reordering-table.3. --model "wbe msd wbe-msd-bidirectional-fe"
+Lexical Reordering Scorer
+scores lexical reordering models of several types (hierarchical, phrase-based and word-based-extraction

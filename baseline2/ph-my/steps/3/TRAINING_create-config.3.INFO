@@ -1,0 +1,5 @@
+script = /home/lawun330/NLP/ubuntu-17.04/moses/scripts/training/train-model.perl [1506443775]
+lexicalized-reordering = msd-bidirectional-fe
+INPUT = USED /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/model/reordering-table.3 /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/model/phrase-table.3       /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/lm/myg2p-data.binlm.2
+score-settings = --GoodTuring
+# reuse run 2 for LM:myg2p-data:binarize

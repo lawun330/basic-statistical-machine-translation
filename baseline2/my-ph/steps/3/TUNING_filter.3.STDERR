@@ -1,0 +1,15 @@
+Using SCRIPTS_ROOTDIR: /home/lawun330/NLP/ubuntu-17.04/moses/scripts
+using pigz 
+(9) create moses.ini @ Sat May 23 20:16:52 +07 2026
+Executing: mkdir -p /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/tuning/filtered.3
+Stripping XML...
+Executing: /home/lawun330/NLP/ubuntu-17.04/moses/scripts/training/../generic/strip-xml.perl < /home/lawun330/Desktop/basic-statistical-machine-translation/data/cleaned_2/dev.my > /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/tuning/filtered.3/input.134652
+pt:PhraseDictionaryMemory name=TranslationModel0 num-features=4 path=/home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/model/phrase-table.3 input-factor=0 output-factor=0
+Considering factor 0
+ro:LexicalReordering name=LexicalReordering0 num-features=6 type=wbe-msd-bidirectional-fe-allff input-factor=0 output-factor=0 path=/home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/model/reordering-table.3.wbe-msd-bidirectional-fe.gz
+Considering factor 0
+Filtering files...
+filtering /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/model/phrase-table.3 -> /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/tuning/filtered.3/phrase-table.0-0.1.1.gz...
+5009 of 46117 phrases pairs used (10.86%) - note: max length 10
+filtering /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/model/reordering-table.3.wbe-msd-bidirectional-fe.gz -> /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/tuning/filtered.3/reordering-table.3.wbe-msd-bidirectional-fe.0-0.1...
+5009 of 46117 phrases pairs used (10.86%) - note: max length 10

@@ -1,0 +1,12 @@
+Binary write mode is NOT selected
+Scorer type: BLEU
+name: case value: true
+Loading reference from /home/lawun330/Desktop/basic-statistical-machine-translation/data/cleaned_2/dev.ph
+...................Data::m_score_type BLEU
+Data::Scorer type from Scorer: BLEU
+loading nbest from run3.best100.out.gz
+Loaded N-best lists : [Wall 0.72554 CPU 0.725764] seconds.
+Binary write mode is NOT selected
+saving the array into run3.features.dat
+saving the array into run3.scores.dat
+Stopping... : [Wall 1.65692 CPU 1.65742] seconds.

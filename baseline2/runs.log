@@ -450,3 +450,207 @@ number of steps doable or running: 1 at Fri May 22 05:51:02 AM +07 2026
 	doable: REPORTING:report
 	executing /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/steps/2/REPORTING_report.2 via sh (1 active)
 number of steps doable or running: 0 at Fri May 22 05:51:09 AM +07 2026
+Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/^\[([^:]+):{ <-- HERE (\S+)}:(\S+)\]$/ at /home/lawun330/NLP/ubuntu-17.04/moses/scripts/ems/experiment.perl line 626.
+STARTING UP AS PROCESS 134165 ON ROG-Strix-Hero-II AT Sat May 23 08:16:21 PM +07 2026
+LOAD CONFIG...
+working directory is /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph
+running experimental run number 3
+
+ESTABLISH WHICH STEPS NEED TO BE RUN
+
+FIND DEPENDENCIES BETWEEN STEPS
+
+CHECKING IF OLD STEPS ARE RE-USABLE
+
+STEP SUMMARY:
+82 EVALUATION:test:input-from-sgm ->	re-using (1)
+76 CORPUS:myg2p-data:clean ->	re-using (1)
+59 LM:myg2p-data:train ->	re-using (2)
+56 LM:myg2p-data:binarize ->	re-using (2)
+55 TRAINING:consolidate ->	re-using (1)
+54 TRAINING:prepare-data ->	re-using (1)
+53 TRAINING:run-giza ->	re-using (1)
+52 TRAINING:run-giza-inverse ->	re-using (1)
+51 TRAINING:symmetrize-giza ->	re-using (1)
+50 TRAINING:build-lex-trans ->	re-using (1)
+47 TRAINING:extract-phrases ->	run
+46 TRAINING:build-reordering ->	run
+45 TRAINING:build-ttable ->	run
+42 TRAINING:create-config ->	run
+27 TUNING:filter ->	run
+26 TUNING:apply-filter ->	run
+25 TUNING:tune ->	run
+24 TUNING:apply-weights ->	run
+18 EVALUATION:test:filter ->	run
+17 EVALUATION:test:apply-filter ->	run
+16 EVALUATION:test:decode ->	run
+15 EVALUATION:test:remove-markup ->	run
+11 EVALUATION:test:wrap ->	run
+10 EVALUATION:test:reference-from-sgm ->	re-using (1)
+5 EVALUATION:test:nist-bleu ->	run
+4 EVALUATION:test:nist-bleu-c ->	run
+3 EVALUATION:test:multi-bleu ->	run
+2 EVALUATION:test:analysis-coverage ->	run
+1 EVALUATION:test:analysis-precision ->	run
+0 REPORTING:report ->	run
+
+EXECUTE STEPS
+number of steps doable or running: 1 at Sat May 23 08:16:22 PM +07 2026
+	doable: TRAINING:extract-phrases
+	executing /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/steps/3/TRAINING_extract-phrases.3 via sh (1 active)
+number of steps doable or running: 2 at Sat May 23 08:16:29 PM +07 2026
+	doable: TRAINING:build-ttable
+	doable: TRAINING:build-reordering
+	executing /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/steps/3/TRAINING_build-ttable.3 via sh (1 active)
+	executing /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/steps/3/TRAINING_build-reordering.3 via sh (2 active)
+number of steps doable or running: 4 at Sat May 23 08:16:42 PM +07 2026
+	doable: EVALUATION:test:filter
+	doable: TUNING:filter
+	doable: TRAINING:create-config
+	doable: EVALUATION:test:analysis-coverage
+	executing /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/steps/3/EVALUATION_test_filter.3 via sh (1 active)
+	executing /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/steps/3/TUNING_filter.3 via sh (2 active)
+number of steps doable or running: 2 at Sat May 23 08:16:54 PM +07 2026
+	doable: TRAINING:create-config
+	doable: EVALUATION:test:analysis-coverage
+	executing /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/steps/3/TRAINING_create-config.3 via sh (1 active)
+	executing /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/steps/3/EVALUATION_test_analysis-coverage.3 via sh (2 active)
+number of steps doable or running: 1 at Sat May 23 08:17:06 PM +07 2026
+	doable: TUNING:apply-filter
+	executing /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/steps/3/TUNING_apply-filter.3 via sh (1 active)
+number of steps doable or running: 1 at Sat May 23 08:17:14 PM +07 2026
+	doable: TUNING:tune
+	executing /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/steps/3/TUNING_tune.3 via sh (1 active)
+number of steps doable or running: 1 at Sat May 23 08:23:54 PM +07 2026
+	doable: TUNING:apply-weights
+	executing /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/steps/3/TUNING_apply-weights.3 via sh (1 active)
+number of steps doable or running: 1 at Sat May 23 08:24:01 PM +07 2026
+	doable: EVALUATION:test:apply-filter
+	executing /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/steps/3/EVALUATION_test_apply-filter.3 via sh (1 active)
+number of steps doable or running: 1 at Sat May 23 08:24:09 PM +07 2026
+	doable: EVALUATION:test:decode
+	executing /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/steps/3/EVALUATION_test_decode.3 via sh (1 active)
+number of steps doable or running: 1 at Sat May 23 08:24:16 PM +07 2026
+	doable: EVALUATION:test:remove-markup
+	executing /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/steps/3/EVALUATION_test_remove-markup.3 via sh (1 active)
+number of steps doable or running: 3 at Sat May 23 08:24:23 PM +07 2026
+	doable: EVALUATION:test:wrap
+	doable: EVALUATION:test:analysis-precision
+	doable: EVALUATION:test:multi-bleu
+	executing /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/steps/3/EVALUATION_test_wrap.3 via sh (1 active)
+	executing /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/steps/3/EVALUATION_test_analysis-precision.3 via sh (2 active)
+number of steps doable or running: 3 at Sat May 23 08:24:36 PM +07 2026
+	doable: EVALUATION:test:nist-bleu-c
+	doable: EVALUATION:test:multi-bleu
+	doable: EVALUATION:test:nist-bleu
+	executing /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/steps/3/EVALUATION_test_nist-bleu-c.3 via sh (1 active)
+	executing /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/steps/3/EVALUATION_test_multi-bleu.3 via sh (2 active)
+number of steps doable or running: 1 at Sat May 23 08:24:48 PM +07 2026
+	doable: EVALUATION:test:nist-bleu
+	executing /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/steps/3/EVALUATION_test_nist-bleu.3 via sh (1 active)
+number of steps doable or running: 1 at Sat May 23 08:24:55 PM +07 2026
+	doable: REPORTING:report
+	executing /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/steps/3/REPORTING_report.3 via sh (1 active)
+number of steps doable or running: 0 at Sat May 23 08:25:03 PM +07 2026
+Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/^\[([^:]+):{ <-- HERE (\S+)}:(\S+)\]$/ at /home/lawun330/NLP/ubuntu-17.04/moses/scripts/ems/experiment.perl line 626.
+STARTING UP AS PROCESS 136206 ON ROG-Strix-Hero-II AT Sat May 23 08:25:03 PM +07 2026
+LOAD CONFIG...
+working directory is /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my
+running experimental run number 3
+
+ESTABLISH WHICH STEPS NEED TO BE RUN
+
+FIND DEPENDENCIES BETWEEN STEPS
+
+CHECKING IF OLD STEPS ARE RE-USABLE
+
+STEP SUMMARY:
+82 EVALUATION:test:input-from-sgm ->	re-using (1)
+76 CORPUS:myg2p-data:clean ->	re-using (1)
+59 LM:myg2p-data:train ->	re-using (2)
+56 LM:myg2p-data:binarize ->	re-using (2)
+55 TRAINING:consolidate ->	re-using (1)
+54 TRAINING:prepare-data ->	re-using (1)
+53 TRAINING:run-giza ->	re-using (1)
+52 TRAINING:run-giza-inverse ->	re-using (1)
+51 TRAINING:symmetrize-giza ->	re-using (1)
+50 TRAINING:build-lex-trans ->	re-using (1)
+47 TRAINING:extract-phrases ->	run
+46 TRAINING:build-reordering ->	run
+45 TRAINING:build-ttable ->	run
+42 TRAINING:create-config ->	run
+27 TUNING:filter ->	run
+26 TUNING:apply-filter ->	run
+25 TUNING:tune ->	run
+24 TUNING:apply-weights ->	run
+18 EVALUATION:test:filter ->	run
+17 EVALUATION:test:apply-filter ->	run
+16 EVALUATION:test:decode ->	run
+15 EVALUATION:test:remove-markup ->	run
+11 EVALUATION:test:wrap ->	run
+10 EVALUATION:test:reference-from-sgm ->	re-using (1)
+5 EVALUATION:test:nist-bleu ->	run
+4 EVALUATION:test:nist-bleu-c ->	run
+3 EVALUATION:test:multi-bleu ->	run
+2 EVALUATION:test:analysis-coverage ->	run
+1 EVALUATION:test:analysis-precision ->	run
+0 REPORTING:report ->	run
+
+EXECUTE STEPS
+number of steps doable or running: 1 at Sat May 23 08:25:04 PM +07 2026
+	doable: TRAINING:extract-phrases
+	executing /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/steps/3/TRAINING_extract-phrases.3 via sh (1 active)
+number of steps doable or running: 2 at Sat May 23 08:25:11 PM +07 2026
+	doable: TRAINING:build-reordering
+	doable: TRAINING:build-ttable
+	executing /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/steps/3/TRAINING_build-reordering.3 via sh (1 active)
+	executing /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/steps/3/TRAINING_build-ttable.3 via sh (2 active)
+number of steps doable or running: 4 at Sat May 23 08:25:24 PM +07 2026
+	doable: EVALUATION:test:analysis-coverage
+	doable: EVALUATION:test:filter
+	doable: TUNING:filter
+	doable: TRAINING:create-config
+	executing /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/steps/3/EVALUATION_test_analysis-coverage.3 via sh (1 active)
+	executing /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/steps/3/EVALUATION_test_filter.3 via sh (2 active)
+number of steps doable or running: 2 at Sat May 23 08:25:36 PM +07 2026
+	doable: TUNING:filter
+	doable: TRAINING:create-config
+	executing /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/steps/3/TUNING_filter.3 via sh (1 active)
+	executing /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/steps/3/TRAINING_create-config.3 via sh (2 active)
+number of steps doable or running: 1 at Sat May 23 08:25:49 PM +07 2026
+	doable: TUNING:apply-filter
+	executing /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/steps/3/TUNING_apply-filter.3 via sh (1 active)
+number of steps doable or running: 1 at Sat May 23 08:25:56 PM +07 2026
+	doable: TUNING:tune
+	executing /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/steps/3/TUNING_tune.3 via sh (1 active)
+number of steps doable or running: 1 at Sat May 23 08:31:06 PM +07 2026
+	doable: TUNING:apply-weights
+	executing /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/steps/3/TUNING_apply-weights.3 via sh (1 active)
+number of steps doable or running: 1 at Sat May 23 08:31:13 PM +07 2026
+	doable: EVALUATION:test:apply-filter
+	executing /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/steps/3/EVALUATION_test_apply-filter.3 via sh (1 active)
+number of steps doable or running: 1 at Sat May 23 08:31:21 PM +07 2026
+	doable: EVALUATION:test:decode
+	executing /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/steps/3/EVALUATION_test_decode.3 via sh (1 active)
+number of steps doable or running: 1 at Sat May 23 08:31:30 PM +07 2026
+	doable: EVALUATION:test:remove-markup
+	executing /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/steps/3/EVALUATION_test_remove-markup.3 via sh (1 active)
+number of steps doable or running: 3 at Sat May 23 08:31:37 PM +07 2026
+	doable: EVALUATION:test:multi-bleu
+	doable: EVALUATION:test:wrap
+	doable: EVALUATION:test:analysis-precision
+	executing /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/steps/3/EVALUATION_test_multi-bleu.3 via sh (1 active)
+	executing /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/steps/3/EVALUATION_test_wrap.3 via sh (2 active)
+number of steps doable or running: 3 at Sat May 23 08:31:50 PM +07 2026
+	doable: EVALUATION:test:analysis-precision
+	doable: EVALUATION:test:nist-bleu
+	doable: EVALUATION:test:nist-bleu-c
+	executing /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/steps/3/EVALUATION_test_analysis-precision.3 via sh (1 active)
+	executing /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/steps/3/EVALUATION_test_nist-bleu.3 via sh (2 active)
+number of steps doable or running: 1 at Sat May 23 08:32:02 PM +07 2026
+	doable: EVALUATION:test:nist-bleu-c
+	executing /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/steps/3/EVALUATION_test_nist-bleu-c.3 via sh (1 active)
+number of steps doable or running: 1 at Sat May 23 08:32:10 PM +07 2026
+	doable: REPORTING:report
+	executing /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/steps/3/REPORTING_report.3 via sh (1 active)
+number of steps doable or running: 0 at Sat May 23 08:32:17 PM +07 2026
