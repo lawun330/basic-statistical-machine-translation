@@ -1,0 +1,201 @@
+Using SCRIPTS_ROOTDIR: /home/lawun330/NLP/ubuntu-17.04/moses/scripts
+Using multi-thread GIZA
+using pigz 
+(2) running giza @ Sun May 24 11:09:52 +07 2026
+(2.1a) running snt2cooc ph-my @ Sun May 24 11:09:52 +07 2026
+
+Executing: mkdir -p /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/training/giza-inverse.5
+Executing: /home/lawun330/NLP/giza-pp/GIZA++-v2/snt2cooc /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/training/giza-inverse.5/ph-my.cooc /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/training/prepared.5/my.vcb /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/training/prepared.5/ph.vcb /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/training/prepared.5/ph-my-int-train.snt
+line 1000
+line 2000
+line 3000
+line 4000
+line 5000
+line 6000
+line 7000
+line 8000
+line 9000
+line 10000
+line 11000
+line 12000
+line 13000
+line 14000
+line 15000
+line 16000
+line 17000
+line 18000
+line 19000
+line 20000
+END.
+(2.1b) running giza ph-my @ Sun May 24 11:09:53 +07 2026
+/home/lawun330/NLP/giza-pp/GIZA++-v2/mgiza  -CoocurrenceFile /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/training/giza-inverse.5/ph-my.cooc -c /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/training/prepared.5/ph-my-int-train.snt -m1 5 -m2 0 -m3 3 -m4 3 -model1dumpfrequency 1 -model4smoothfactor 0.4 -ncpus 8 -nodumps 1 -nsmooth 4 -o /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/training/giza-inverse.5/ph-my -onlyaldumps 1 -p0 0.999 -s /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/training/prepared.5/my.vcb -t /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/training/prepared.5/ph.vcb
+Executing: /home/lawun330/NLP/giza-pp/GIZA++-v2/mgiza  -CoocurrenceFile /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/training/giza-inverse.5/ph-my.cooc -c /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/training/prepared.5/ph-my-int-train.snt -m1 5 -m2 0 -m3 3 -m4 3 -model1dumpfrequency 1 -model4smoothfactor 0.4 -ncpus 8 -nodumps 1 -nsmooth 4 -o /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/training/giza-inverse.5/ph-my -onlyaldumps 1 -p0 0.999 -s /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/training/prepared.5/my.vcb -t /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/training/prepared.5/ph.vcb
+Starting MGIZA 
+Initializing Global Paras 
+DEBUG: EnterDEBUG: PrefixDEBUG: LogParsing Arguments 
+Opening Log File 
+Printing parameters 
+Reading vocabulary file from:/home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/training/prepared.5/my.vcb
+Reading vocabulary file from:/home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/training/prepared.5/ph.vcb
+Compacted Vocabulary, eliminated 1 entries 2283 remains 
+Compacted Vocabulary, eliminated 1 entries 1834 remains 
+Dictionary Loading complete
+Inputfile in /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/training/giza-inverse.5/ph-my.cooc
+cooc file loading completed
+TTable initialization OK
+Model one initalization OK
+Main thread done, waiting
+Thread 1done
+Thread 2done
+Thread 3done
+Thread 4done
+Thread 5done
+Thread 6done
+Thread 7done
+Normalizing T 
+ DONE Normalizing 
+Main thread done, waiting
+Thread 1done
+Thread 2done
+Thread 3done
+Thread 4done
+Thread 5done
+Thread 6done
+Thread 7done
+Normalizing T 
+ DONE Normalizing 
+Main thread done, waiting
+Thread 1done
+Thread 2done
+Thread 3done
+Thread 4done
+Thread 5done
+Thread 6done
+Thread 7done
+Normalizing T 
+ DONE Normalizing 
+Main thread done, waiting
+Thread 1done
+Thread 2done
+Thread 3done
+Thread 4done
+Thread 5done
+Thread 6done
+Thread 7done
+Normalizing T 
+ DONE Normalizing 
+Main thread done, waiting
+Thread 1done
+Thread 2done
+Thread 3done
+Thread 4done
+Thread 5done
+Thread 6done
+Thread 7done
+Normalizing T 
+ DONE Normalizing 
+Dump files 0 it 1 noIterations 5 dumpFreq 0
+Thread 1done
+Thread 2done
+Thread 3done
+Thread 4done
+Thread 5done
+Thread 6done
+Thread 7done
+Dump files 0 it 2 noIterations 5 dumpFreq 0
+Thread 1done
+Thread 2done
+Thread 3done
+Thread 4done
+Thread 5done
+Thread 6done
+Thread 7done
+Dump files 0 it 3 noIterations 5 dumpFreq 0
+Thread 1done
+Thread 2done
+Thread 3done
+Thread 4done
+Thread 5done
+Thread 6done
+Thread 7done
+Dump files 0 it 4 noIterations 5 dumpFreq 0
+Thread 1done
+Thread 2done
+Thread 3done
+Thread 4done
+Thread 5done
+Thread 6done
+Thread 7done
+Dump files 0 it 5 noIterations 5 dumpFreq 0
+Thread 1done
+Thread 2done
+Thread 3done
+Thread 4done
+Thread 5done
+Thread 6done
+Thread 7done
+10000
+20000
+Thread 1done
+Thread 2done
+Thread 3done
+Thread 4done
+Thread 5done
+Thread 6done
+Thread 7done
+NTable contains 22840 parameter.
+10000
+20000
+Thread 1done
+Thread 2done
+Thread 3done
+Thread 4done
+Thread 5done
+Thread 6done
+Thread 7done
+NTable contains 22840 parameter.
+10000
+20000
+Thread 1done
+Thread 2done
+Thread 3done
+Thread 4done
+Thread 5done
+Thread 6done
+Thread 7done
+NTable contains 22840 parameter.
+10000
+20000
+Thread 1done
+Thread 2done
+Thread 3done
+Thread 4done
+Thread 5done
+Thread 6done
+Thread 7done
+NTable contains 22840 parameter.
+10000
+20000
+Thread 1done
+Thread 2done
+Thread 3done
+Thread 4done
+Thread 5done
+Thread 6done
+Thread 7done
+NTable contains 22840 parameter.
+10000
+20000
+Thread 1done
+Thread 2done
+Thread 3done
+Thread 4done
+Thread 5done
+Thread 6done
+Thread 7done
+NTable contains 22840 parameter.
+Merging A3.final.part* tables
+Executing: /home/lawun330/NLP/giza-pp/GIZA++-v2/merge_alignment.py  /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/training/giza-inverse.5/ph-my.A3.final.part*>/home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/training/giza-inverse.5/ph-my.A3.final
+Combined 8 files, totally 20000 sents 
+Executing: rm -f /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/training/giza-inverse.5/ph-my.A3.final.gz
+Executing: pigz /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/training/giza-inverse.5/ph-my.A3.final

@@ -283,7 +283,7 @@ script = $moses-script-dir/training/train-model.perl
 # * "-sort-parallel 8 -cores 8" to speed up phrase table building
 #
 #training-options = "-sort-parallel 8 -cores 8"
-
+training-options = "-mgiza -mgiza-cpus 8" # -- EDIT HERE --
 #training-options = "-cores 8"
 
 ### factored training: specify here which factors used

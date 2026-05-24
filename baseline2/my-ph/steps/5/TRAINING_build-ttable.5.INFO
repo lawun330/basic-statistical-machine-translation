@@ -1,0 +1,4 @@
+training-options = -mgiza -mgiza-cpus 8
+score-settings = --GoodTuring
+script = /home/lawun330/NLP/ubuntu-17.04/moses/scripts/training/train-model.perl [1506443775]
+INPUT = USED /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/model/extract.5 /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/model/lex.5 

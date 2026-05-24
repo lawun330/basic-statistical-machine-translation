@@ -1,0 +1,4 @@
+starting at Sun May 24 11:03:37 AM +07 2026 on ROG-Strix-Hero-II
+To run the decoder, please call:
+  moses -f /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/evaluation/test.filtered.5/moses.ini -i /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/evaluation/test.filtered.5/input.168554
+finished at Sun May 24 11:03:37 AM +07 2026

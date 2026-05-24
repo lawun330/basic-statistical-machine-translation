@@ -67,6 +67,8 @@
 ## References
 
 - [Moses SMT Framework](https://www.statmt.org/moses-release/RELEASE-4.0/binaries/)
+- [GIZA](https://github.com/moses-smt/giza-pp)
+- [MGIZA](https://github.com/moses-smt/mgiza)
 - [In-Class Tutorial](https://github.com/ye-kyaw-thu/AIE-F/tree/main/slide-code/class-13and14/SMT_Tutorial)
 - [PBSMT Example](https://github.com/ye-kyaw-thu/MTRSS/tree/master/pbsmt)
 

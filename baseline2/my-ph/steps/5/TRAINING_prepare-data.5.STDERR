@@ -1,0 +1,18 @@
+Using SCRIPTS_ROOTDIR: /home/lawun330/NLP/ubuntu-17.04/moses/scripts
+Using multi-thread GIZA
+using pigz 
+(1) preparing corpus @ Sun May 24 11:02:45 +07 2026
+Executing: mkdir -p /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/training/prepared.5
+(1.0) selecting factors @ Sun May 24 11:02:45 +07 2026
+(1.1) running mkcls  @ Sun May 24 11:02:45 +07 2026
+/home/lawun330/NLP/giza-pp/GIZA++-v2/mkcls -c50 -n2 -p/home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/training/corpus.1.my -V/home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/training/prepared.5/my.vcb.classes opt
+(1.2) creating vcb file /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/training/prepared.5/my.vcb @ Sun May 24 11:02:45 +07 2026
+  /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/training/prepared.5/my.vcb.classes already in place, reusing
+(1.1) running mkcls  @ Sun May 24 11:02:45 +07 2026
+/home/lawun330/NLP/giza-pp/GIZA++-v2/mkcls -c50 -n2 -p/home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/training/corpus.1.ph -V/home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/training/prepared.5/ph.vcb.classes opt
+  /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/training/prepared.5/ph.vcb.classes already in place, reusing
+(1.2) creating vcb file /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/training/prepared.5/ph.vcb @ Sun May 24 11:02:45 +07 2026
+(1.3) numberizing corpus /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/training/prepared.5/my-ph-int-train.snt @ Sun May 24 11:02:45 +07 2026
+  /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/training/prepared.5/my-ph-int-train.snt already in place, reusing
+(1.3) numberizing corpus /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/training/prepared.5/ph-my-int-train.snt @ Sun May 24 11:02:45 +07 2026
+  /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/training/prepared.5/ph-my-int-train.snt already in place, reusing

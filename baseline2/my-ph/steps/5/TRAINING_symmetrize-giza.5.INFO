@@ -1,0 +1,4 @@
+INPUT = USED /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/training/giza.5 /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/training/giza-inverse.5
+script = /home/lawun330/NLP/ubuntu-17.04/moses/scripts/training/train-model.perl [1506443775]
+training-options = -mgiza -mgiza-cpus 8
+alignment-symmetrization-method = grow-diag-final-and

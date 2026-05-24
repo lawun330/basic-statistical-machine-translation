@@ -1,0 +1,4 @@
+script = /home/lawun330/NLP/ubuntu-17.04/moses/scripts/training/train-model.perl [1506443775]
+INPUT = USED /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/training/corpus.1
+training-options = -mgiza -mgiza-cpus 8
+# reuse run 1 for TRAINING:consolidate

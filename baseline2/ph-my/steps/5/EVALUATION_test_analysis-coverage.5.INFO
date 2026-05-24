@@ -1,0 +1,3 @@
+INPUT = USED /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/evaluation/test.input.txt.1 /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/training/corpus.1 /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/model/phrase-table.5
+# reuse run 1 for EVALUATION:test:input-from-sgm
+# reuse run 1 for TRAINING:consolidate

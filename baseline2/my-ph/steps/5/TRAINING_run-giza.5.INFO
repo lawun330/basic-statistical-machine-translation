@@ -1,0 +1,4 @@
+training-options = -mgiza -mgiza-cpus 8
+script = /home/lawun330/NLP/ubuntu-17.04/moses/scripts/training/train-model.perl [1506443775]
+INPUT = USED /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/training/prepared.5
+external-bin-dir = /home/lawun330/NLP/giza-pp/GIZA++-v2 [1779595103]

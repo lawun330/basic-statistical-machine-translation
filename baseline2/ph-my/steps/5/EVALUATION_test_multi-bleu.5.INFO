@@ -1,0 +1,3 @@
+multi-bleu = /home/lawun330/NLP/ubuntu-17.04/moses/scripts/generic/multi-bleu.perl [1506443775]
+INPUT = USED /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/evaluation/test.cleaned.5 /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/evaluation/test.reference.txt.1
+# reuse run 1 for EVALUATION:test:reference-from-sgm

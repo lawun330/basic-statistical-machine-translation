@@ -1,0 +1,6 @@
+Using SCRIPTS_ROOTDIR: /home/lawun330/NLP/ubuntu-17.04/moses/scripts
+using pigz 
+(4) generate lexical translation table 0-0 @ Sun May 24 11:03:12 +07 2026
+(/home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/training/corpus.1.my,/home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/training/corpus.1.ph,/home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/model/lex.5)
+!!!!!!!!!!!!!!!!!!!!
+Saved: /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/model/lex.5.f2e and /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/model/lex.5.e2f
