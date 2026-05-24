@@ -1,0 +1,13 @@
+run,experiment,direction,step,baseline_root,bleu,n1,n2,n3,n4,bp,ratio,hyp_len,ref_len,path
+1,run1–3 baseline,my-ph,2,baseline,69.14,85.2,72.4,64.3,57.6,1.0,1.0,8050,8048,/home/lawun330/Desktop/basic-statistical-machine-translation/baseline/my-ph/evaluation/test.multi-bleu.2
+1,run1–3 baseline,ph-my,2,baseline,78.15,87.8,79.4,75.0,71.3,1.0,1.0,8047,8048,/home/lawun330/Desktop/basic-statistical-machine-translation/baseline/ph-my/evaluation/test.multi-bleu.2
+2,run4 new normalization,my-ph,1,baseline2,69.49,85.2,72.6,64.8,58.2,1.0,1.0,8050,8048,/home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/evaluation/test.multi-bleu.1
+2,run4 new normalization,ph-my,1,baseline2,78.44,87.8,79.6,75.6,71.7,1.0,1.0,8046,8048,/home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/evaluation/test.multi-bleu.1
+3,run5 3-gram LM,my-ph,2,baseline2,69.25,85.3,72.7,64.7,57.4,1.0,1.0,8050,8048,/home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/evaluation/test.multi-bleu.2
+3,run5 3-gram LM,ph-my,2,baseline2,78.45,87.9,79.7,75.6,71.7,1.0,1.0,8046,8048,/home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/evaluation/test.multi-bleu.2
+4,run6 max-phrase 3,my-ph,3,baseline2,69.46,85.1,72.5,64.2,58.8,1.0,1.0,8051,8048,/home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/evaluation/test.multi-bleu.3
+4,run6 max-phrase 3,ph-my,3,baseline2,78.31,87.9,79.6,75.4,71.4,1.0,1.0,8045,8048,/home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/evaluation/test.multi-bleu.3
+5,run7 less prune,my-ph,4,baseline2,69.88,85.3,72.8,65.0,59.1,1.0,1.0,8050,8048,/home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/evaluation/test.multi-bleu.4
+5,run7 less prune,ph-my,4,baseline2,78.3,87.7,79.3,75.4,71.8,1.0,1.0,8045,8048,/home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/evaluation/test.multi-bleu.4
+6,run8 MGIZA,my-ph,5,baseline2,69.71,85.1,72.7,65.0,58.7,1.0,1.0,8050,8048,/home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/evaluation/test.multi-bleu.5
+6,run8 MGIZA,ph-my,5,baseline2,78.41,87.8,79.5,75.5,71.8,1.0,1.0,8045,8048,/home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/evaluation/test.multi-bleu.5

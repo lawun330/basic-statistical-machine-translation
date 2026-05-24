@@ -1,0 +1,7 @@
+run,experiment,my-ph,ph-my
+1,run1–3 baseline,69.14,78.15
+2,run4 new normalization,69.49,78.44
+3,run5 3-gram LM,69.25,78.45
+4,run6 max-phrase 3,69.46,78.31
+5,run7 less prune,69.88,78.3
+6,run8 MGIZA,69.71,78.41
