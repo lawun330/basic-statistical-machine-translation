@@ -1,0 +1,6 @@
+# Install Perl, Moses, GIZA++, MGIZA, ImageMagick, and Graphviz separately.
+# Install these in the working environment:
+matplotlib
+numpy
+pandas
+jupyter
