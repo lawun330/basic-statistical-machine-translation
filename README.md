@@ -19,6 +19,21 @@
     line 950: \p{Line_Break=Hyphen} # with this
     ```
 
+## Experiments
+
+1. **SMT run1** (run1,2,3 in notebooks => baseline/run 1+2+3): syl-normalization, 5-gram, max-phrase 5, prune 001, GIZA
+2. **SMT run2** (run4 in notebooks => baseline2/run 1): new syl-normalization, 5-gram, max-phrase 5, prune 001, GIZA
+3. **SMT run3** (run5 in notebooks => baseline2/run 2): new syl-normalization, 3-gram, max-phrase 5, prune 001, GIZA
+4. **SMT run4** (run6 in notebooks => baseline2/run 3): new syl-normalization, 3-gram, max-phrase 3, prune 001, GIZA
+5. **SMT run5** (run7 in notebooks => baseline2/run 4): new syl-normalization, 3-gram, max-phrase 3, prune 000, GIZA
+6. **SMT run6** (run8 in notebooks => baseline2/run 5): new syl-normalization, 3-gram, max-phrase 3, prune 001, MGIZA
+
+Summary: [presentation slides](presentation_slides.pdf)
+
+Results:
+| ![](img/bleu_bars.png) | ![](img/bleu_lines.png) |
+|------------------------|-------------------------|
+
 ## Dataset
 
 - [Sayar's G2P dataset](https://github.com/ye-kyaw-thu/AIE-F/tree/main/slide-code/class-13and14/data)
@@ -29,6 +44,7 @@
 ...
 ├── img/
 ├── notebooks/
+├── summary/
 │
 ├── baseline/           # run1 to run3 with data v1
 │   ├── logs/
