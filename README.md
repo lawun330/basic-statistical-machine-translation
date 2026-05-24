@@ -2,10 +2,14 @@
 
 ## Overview
 
+This project implements a basic SMT system for Burmese grapheme-to-phoneme (G2P) translation using established SMT toolkits such as Moses, GIZA++, and MGIZA, along with custom preprocessing scripts for data normalization and preparation.
+
+The workflow covers the full SMT pipeline from data normalization and SGM file generation to training, decoding, and evaluation. Multiple experiments are documented with varying settings. BLEU scores and translation outputs are systematically logged and summarized for comparative analysis.
+
 ## Error-Free PBSMT Workflow
 
 - Use Ubuntu-native Perl v5.38
-- Install Moses and GIZA++
+- Install Moses, GIZA++, and MGIZA
 - Optionally configure paths in 
     - config.baseline, generate_configs.pl,
     - generate_sgms.pl, src2sgm.pl, and ref2sgm.pl
@@ -21,12 +25,12 @@
 
 ## Experiments
 
-1. **SMT run1** (run1,2,3 in notebooks => baseline/run 1+2+3): syl-normalization, 5-gram, max-phrase 5, prune 001, GIZA
-2. **SMT run2** (run4 in notebooks => baseline2/run 1): new syl-normalization, 5-gram, max-phrase 5, prune 001, GIZA
-3. **SMT run3** (run5 in notebooks => baseline2/run 2): new syl-normalization, 3-gram, max-phrase 5, prune 001, GIZA
-4. **SMT run4** (run6 in notebooks => baseline2/run 3): new syl-normalization, 3-gram, max-phrase 3, prune 001, GIZA
-5. **SMT run5** (run7 in notebooks => baseline2/run 4): new syl-normalization, 3-gram, max-phrase 3, prune 000, GIZA
-6. **SMT run6** (run8 in notebooks => baseline2/run 5): new syl-normalization, 3-gram, max-phrase 3, prune 001, MGIZA
+1. **SMT run1** (run1,2,3 in [pbsmt_v1](notebooks/pbsmt_v1.ipynb) and [pbsmt_v2](notebooks/pbsmt_v2.ipynb) => baseline/run 1+2+3): syl-normalization, 5-gram, max-phrase 5, prune 001, GIZA
+2. **SMT run2** (run4 in [pbsmt_v3](notebooks/pbsmt_v3.ipynb) => baseline2/run 1): new syl-normalization, 5-gram, max-phrase 5, prune 001, GIZA
+3. **SMT run3** (run5 in [pbsmt_v3](notebooks/pbsmt_v3.ipynb) => baseline2/run 2): new syl-normalization, 3-gram, max-phrase 5, prune 001, GIZA
+4. **SMT run4** (run6 in [pbsmt_v4](notebooks/pbsmt_v4.ipynb) => baseline2/run 3): new syl-normalization, 3-gram, max-phrase 3, prune 001, GIZA
+5. **SMT run5** (run7 in [pbsmt_v4](notebooks/pbsmt_v4.ipynb) => baseline2/run 4): new syl-normalization, 3-gram, max-phrase 3, prune 000, GIZA
+6. **SMT run6** (run8 in [pbsmt_v4](notebooks/pbsmt_v4.ipynb) => baseline2/run 5): new syl-normalization, 3-gram, max-phrase 3, prune 001, MGIZA
 
 Summary: [presentation slides](presentation_slides.pdf)
 
