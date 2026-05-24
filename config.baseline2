@@ -136,7 +136,7 @@ raw-stem = $myg2p-data/train # -- EDIT HERE --
 
 # kenlm training
 lm-training = "$moses-script-dir/ems/support/lmplz-wrapper.perl -bin $moses-bin-dir/lmplz"
-settings = "--prune '0 0 1' -T $working-dir/lm -S 20% --discount_fallback"
+settings = "--prune '0 0 0' -T $working-dir/lm -S 20% --discount_fallback" # -- EDIT HERE --
 
 #lm-binarizer = $moses-bin-dir/build_binary
 

@@ -1,0 +1,26 @@
+Executing: /home/lawun330/NLP/ubuntu-17.04/moses/bin/lmplz --text /home/lawun330/Desktop/basic-statistical-machine-translation/data/cleaned_2/train.my --order 3 --arpa /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/lm/myg2p-data.lm.4 --prune 0 0 0 --discount_fallback -T /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/lm -S 20%
+=== 1/5 Counting and sorting n-grams ===
+Reading /home/lawun330/Desktop/basic-statistical-machine-translation/data/cleaned_2/train.my
+----5---10---15---20---25---30---35---40---45---50---55---60---65---70---75---80---85---90---95--100
+****************************************************************************************************
+Unigram tokens 57286 types 2285
+=== 2/5 Calculating and sorting adjusted counts ===
+Chain sizes: 1:27420 2:568122624 3:1065229952
+Statistics:
+1 2285 D1=0.493908 D2=0.896938 D3+=1.4765
+2 27526 D1=0.806399 D2=1.24469 D3+=1.25313
+3 44955 D1=0.818379 D2=1.38622 D3+=1.79155
+Memory estimate for binary LM:
+type      kB
+probing 1493 assuming -p 1.5
+probing 1663 assuming -r models -p 1.5
+trie     595 without quantization
+trie     314 assuming -q 8 -b 8 quantization 
+trie     567 assuming -a 22 array pointer compression
+trie     286 assuming -a 22 -q 8 -b 8 array pointer compression and quantization
+=== 3/5 Calculating and sorting initial probabilities ===
+Chain sizes: 1:27420 2:440416 3:899100
+=== 4/5 Calculating and writing order-interpolated probabilities ===
+Chain sizes: 1:27420 2:440416 3:899100
+=== 5/5 Writing ARPA model ===
+Name:lmplz	VmPeak:1742868 kB	VmRSS:7240 kB	RSSMax:384844 kB	user:0.108039	sys:0.172661	CPU:0.2807	real:0.264537

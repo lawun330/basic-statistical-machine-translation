@@ -1,0 +1,4 @@
+INPUT = USED /home/lawun330/Desktop/basic-statistical-machine-translation/data/cleaned_2/train.my
+lm-training = /home/lawun330/NLP/ubuntu-17.04/moses/scripts/ems/support/lmplz-wrapper.perl -bin /home/lawun330/NLP/ubuntu-17.04/moses/bin/lmplz [1506443774]
+settings = --prune '0 0 0' -T /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/lm -S 20% --discount_fallback
+order = 3

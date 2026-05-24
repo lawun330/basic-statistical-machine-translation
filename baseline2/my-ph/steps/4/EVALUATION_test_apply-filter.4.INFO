@@ -1,0 +1,2 @@
+INPUT = USED /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/evaluation/test.filtered.3 /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/model/moses.ini.4 /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/my-ph/tuning/moses.tuned.ini.4
+# reuse run 3 for EVALUATION:test:filter

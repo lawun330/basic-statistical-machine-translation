@@ -1,0 +1,2 @@
+lm-binarizer = /home/lawun330/NLP/ubuntu-17.04/moses/bin/build_binary [1506443763]
+INPUT = USED /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/lm/myg2p-data.lm.4

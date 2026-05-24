@@ -1,0 +1,6 @@
+INPUT = USED /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/tuning/moses.tuned.ini.4 /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/evaluation/test.input.txt.1 /home/lawun330/Desktop/basic-statistical-machine-translation/baseline2/ph-my/evaluation/test.filtered.ini.4
+decoder = /home/lawun330/NLP/ubuntu-17.04/moses/bin/moses [1506443762]
+decoder-settings = -search-algorithm 1 -cube-pruning-pop-limit 5000 -s 5000
+report-segmentation = yes
+report-precision-by-coverage = yes
+# reuse run 1 for EVALUATION:test:input-from-sgm
