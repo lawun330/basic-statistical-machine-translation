@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project implements a basic SMT system for Burmese grapheme-to-phoneme (G2P) translation using established SMT toolkits such as Moses, GIZA++, and MGIZA, along with custom preprocessing scripts for data normalization and preparation.
+This project implements a basic SMT system for Burmese grapheme-to-phoneme (G2P) and phoneme-to-grapheme (P2G) translation using established SMT toolkits such as Moses, GIZA++, and MGIZA, along with custom preprocessing scripts for data normalization and preparation.
 
 The workflow covers the full SMT pipeline from data normalization and SGM file generation to training, decoding, and evaluation. Multiple experiments are documented with varying settings. BLEU scores and translation outputs are systematically logged and summarized for comparative analysis.
 
