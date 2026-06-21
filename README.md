@@ -77,6 +77,10 @@ Results:
 │   │   └── ...
 │   └── logs/
 │
+├── moses/
+├── models/
+├── src/                # local inference UI
+│
 ├── syl-normalizer/     # originally Sayar's # modified to merge with previous token for athat (်) cases
 │
 ├── config.baseline     # originally Sayar's # modified paths # uncomment multi-bleu
